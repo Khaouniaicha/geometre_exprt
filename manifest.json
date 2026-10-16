@@ -1,0 +1,25 @@
+{
+  "name": "Cabinet d'Ingénierie & d'Expertise Foncière - Farid Khelil",
+  "short_name": "Farid Khelil OGEF",
+  "description": "Cabinet d'Ingénierie et d'Expertise Foncière Farid Khelil agréé OGEF N° 865 à Koléa, Tipaza. Bornage, cadastre, lois 08-15 et 02-07, topographie et division foncière.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#065f46",
+  "theme_color": "#065f46",
+  "icons": [
+    {
+      "src": "assets/ogef-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/ogef-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,13 +1,14 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Géomètre Expert;Cabinet;;;
-FN:Cabinet Géomètre Expert Foncier Agréé OGEF
-ORG:Ordre des Géomètres-Experts Fonciers (OGEF)
-TITLE:Géomètre Expert Foncier Assermenté
-TEL;TYPE=WORK,VOICE:+21300000000
-TEL;TYPE=CELL,VOICE:+21300000000
-EMAIL;TYPE=WORK,INTERNET:contact@votre-cabinet.dz
-URL:https://votre-cabinet.dz
-ADR;TYPE=WORK:;;Adresse du cabinet;Ville;Wilaya;;Algérie
-NOTE:Cabinet Agréé OGEF - Bornage, Cadastre, Régularisation Lois 08-15 / 22-55 / 02-07, Division & Topographie
+N:Khelil;Farid;;Ing.;
+FN:Farid Khelil - Géomètre Expert Foncier
+ORG:Cabinet d'Ingénierie et d'Expertise Foncière - OGEF N° 865
+TITLE:Géomètre-Expert Foncier Agréé OGEF (خليل فريد - مكتب الهندسة والخبرة العقارية)
+TEL;TYPE=WORK,VOICE:+21324061319
+TEL;TYPE=CELL,VOICE,PREF:+213699378444
+TEL;TYPE=CELL,VOICE:+213558567138
+EMAIL;TYPE=WORK,INTERNET:faridkhelil16@gmail.com
+ADR;TYPE=WORK:;;Résidence El Sahel Kerkouba, Derrière la banque CPA;Koléa;Tipaza;;Algérie
+URL:https://maps.app.goo.gl/wJWnDGQdRsHwPk6o6?g_st=aw
+NOTE:Géomètre-Expert Foncier Agréé OGEF N° 865 - Koléa, Tipaza / مهندس خبير عقاري معتمد رقم 865
 END:VCARD

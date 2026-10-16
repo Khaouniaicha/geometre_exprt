@@ -1,20 +1,20 @@
 /**
  * Multilingual Translations Dictionary (FR / AR / EN)
- * Cabinet Géomètre Expert Foncier - Agréé OGEF
+ * Cabinet d'Ingénierie & d'Expertise Foncière Foncier - Agréé OGEF
  * Conforme au cadre réglementaire et juridique algérien (Lois 08-15, 22-55, 02-07, Cadastre)
  */
 
 const translations = {
   fr: {
     // Top Bar & Meta
-    pageTitle: "Cabinet Géomètre Expert Foncier Agréé OGEF | Bornage, Cadastre & Régularisation",
-    certifiedBadge: "Membre de l'Ordre des Géomètres-Experts Fonciers (OGEF)",
-    officeHours: "Dimanche au jeudi : 8 h – 16 h",
+    pageTitle: "Cabinet d'Ingénierie & d'Expertise Foncière - Farid Khelil | Agréé OGEF N° 865 Koléa Tipaza",
+    certifiedBadge: "Cabinet Agréé OGEF N° 865",
+    officeHours: "Tous les jours sauf vendredi : 9h00 – 16h30",
     callUs: "Appelez-nous",
 
     // Nav
-    brandTitle: "Cabinet Géomètre Expert",
-    brandSubtitle: "Agréé OGEF • Expertise Foncière & Topographie",
+    brandTitle: "Cabinet d'Ingénierie & d'Expertise Foncière",
+    brandSubtitle: "Farid Khelil • Agréé OGEF N° 865 • Koléa, Tipaza",
     navHome: "Accueil",
     navServices: "Prestations",
     navCadastre: "Régularisation & Lois",
@@ -143,9 +143,13 @@ const translations = {
 
     // Cabinet
     cabinetTag: "Le cabinet",
+    facadePlaqueTag: "Siège Officiel du Cabinet",
+    facadeName: "Farid Khelil",
+    facadeReg: "Agréé Cadastre N° 865",
+    facadeSub: "Cabinet d'Ingénierie & d'Expertise Foncière agréé par l'Ordre des Géomètres-Experts et la conservation foncière. Résidence El Sahel Kerkouba (derrière CPA), Koléa, Tipaza.",
     cabinetTitle: "Une équipe de professionnels agréés à votre service",
     cabinetLead: "Inscrit au tableau national de l'Ordre des Géomètres-Experts Fonciers (OGEF), notre cabinet allie expérience du terrain et maîtrise des technologies de pointe (GPS RTK centimétrique, stations totales motorisées, DAO/SIG).",
-    cabCheck1Title: "Agrément officiel OGEF & Prestation de serment",
+    cabCheck1Title: "Agrément OGEF N° 865 & Prestation de serment",
     cabCheck1Desc: "Habilitation officielle garantissant la pleine autorité légale de tous nos procès-verbaux et plans.",
     cabCheck2Title: "Respect strict des normes et de la déontologie",
     cabCheck2Desc: "Neutralité impartiale, secret professionnel absolu et rigueur technique irréprochable.",
@@ -186,13 +190,13 @@ const translations = {
     faqTitle: "Questions fréquentes sur les travaux fonciers",
     faqSubtitle: "Toutes les réponses indispensables pour démarrer votre projet en toute sérénité.",
     faqQ1: "Pourquoi faire réaliser un bornage contradictoire ?",
-    faqA1: "Le bornage contradictoire est le seul acte juridique qui fixe définitivement et officiellement les limites de propriété entre deux terrains contigus. Il prévient les empiétements et protège la valeur de votre bien.",
+    faqA1: "Le bornage contradictoire est une opération contradictoire réalisée par un géomètre-expert foncier agréé pour fixer avec précision les limites séparatives entre propriétés contiguës. Matérialisé par des bornes et un procès-verbal signé, il prévient durablement les litiges de voisinage et sert de référence légale auprès des notaires et des juridictions.",
     faqQ2: "En quoi consiste la régularisation dans le cadre des lois 08-15 et 22-55 ?",
     faqA2: "Ces lois permettent d'achever et de mettre en conformité les constructions non pourvues de permis d'achèvement ou construites sans permis. Le géomètre expert établit les plans de récolement et l'état descriptif nécessaires au dossier administratif.",
     faqQ3: "Le devis est-il totalement gratuit et sans engagement ?",
     faqA3: "Oui, absolument. Nous analysons votre besoin sous 48 h et vous remettons un devis détaillé, transparent et sans aucun frais caché.",
     faqQ4: "Vos plans et procès-verbaux sont-ils reconnus par le Cadastre et la Conservation Foncière ?",
-    faqA4: "Oui. En tant que géomètres experts assermentés et inscrits à l'Ordre (OGEF), tous nos livrables ont pleine valeur légale et sont directement exploitables par les notaires, mairies, conservations foncières et tribunaux.",
+    faqA4: "Oui. En tant que géomètre-expert agréé inscrit au tableau de l'Ordre (OGEF), nos plans, documents d'arpentage et procès-verbaux sont dressés conformément aux normes techniques officielles et sont directement recevables auprès de la Conservation Foncière, du Cadastre, des études notariales et des juridictions compétentes.",
 
     // Contact
     contactTag: "Contact & Devis",
@@ -201,11 +205,11 @@ const translations = {
     contactInfoTitle: "Coordonnées du cabinet",
     contactInfoDesc: "Nous sommes disponibles pour vous conseiller et vous accompagner dans toutes vos démarches foncières et cadastrales.",
     contactAddressLabel: "Adresse",
-    contactAddressVal: "Adresse du cabinet, Ville, Wilaya",
+    contactAddressVal: "Résidence El Sahel Kerkouba (derrière CPA), Koléa, Tipaza",
     contactPhoneLabel: "Téléphone",
     contactEmailLabel: "Email",
     contactHoursLabel: "Horaires",
-    contactHoursVal: "Dimanche au jeudi, 8 h – 16 h",
+    contactHoursVal: "Tous les jours sauf vendredi : 9h00 – 16h30",
     quickCallTitle: "Besoin d'un renseignement immédiat ?",
     quickCallDesc: "Nos géomètres sont à votre écoute par téléphone ou sur WhatsApp durant les heures d'ouverture.",
     btnCallDirect: "Appeler le cabinet",
@@ -245,7 +249,7 @@ const translations = {
     btnSubmitQuote: "Demander un devis gratuit",
     btnSending: "Envoi de votre demande...",
     // QR Code and Networks
-    btnOpenQrModal: "QR Code Contact & Réseaux",
+    btnOpenQrModal: "QR Code",
     qrModalTitle: "Scanner le QR Code du Cabinet",
     qrModalSubtitle: "Enregistrez nos coordonnées et accédez à nos réseaux en un instant avec votre smartphone.",
     qrTabVcard: "Contact Téléphone (vCard)",
@@ -266,7 +270,60 @@ const translations = {
     btnCopyQuote: "Copier les détails du devis",
     copiedQuoteToast: "Détails du devis copiés dans le presse-papier !",
     quoteSummaryHeader: "Récapitulatif de votre demande :",
+    // Android Bottom App Navigation
+    bottomNavHome: "Accueil",
+    bottomNavServices: "Services",
+    bottomNavDevis: "Devis",
+    bottomNavWhatsApp: "WhatsApp",
+    bottomNavQr: "QR Code",
 
+    
+    // Prestation Category Filters
+    catAll: "Tous les domaines (14)",
+    catBornage: "1. Bornage & Délimitation",
+    catRegul: "2. Régularisation & Lois",
+    catCadastre: "3. Cadastre & Arpentage",
+    catCopro: "4. Division & Copropriété",
+    catTopo: "5. Topographie & VRD",
+    catExpertise: "6. Expertise & Enquêtes",
+
+    // Contextual CTA
+    ctaPrestationsTitle: "Vous ne trouvez pas exactement votre cas de figure ?",
+    ctaPrestationsDesc: "Chaque situation foncière est spécifique. Contactez directement notre géomètre-expert pour une orientation préalable personnalisée.",
+    btnCallNow: "Appeler le cabinet",
+
+    // Trust Pillars (Replacing fake stats)
+    pillar1Title: "Agrément Officiel OGEF",
+    pillar1Desc: "Inscrit au Tableau de l'Ordre • Prestation de serment",
+    pillar2Title: "Haute Précision GNSS RTK",
+    pillar2Desc: "Mesures centimétriques par satellite & Station Totale",
+    pillar3Title: "Réponse sous 48 h",
+    pillar3Desc: "Étude technique préalable et devis transparent",
+    pillar4Title: "Couverture Wilaya",
+    pillar4Desc: "Déplacements rapides en zones urbaines et rurales",
+
+    // Institutional Partners & Ethics (Replacing fake testimonials)
+    partnersTag: "Déontologie & Partenaires",
+    partnersTitle: "Un cadre technique et juridique rigoureux",
+    partnersSubtitle: "Nos livrables sont établis selon les normes de l'Ordre des Géomètres-Experts (OGEF) et sont directement recevables auprès des institutions.",
+    partner1Title: "Études Notariales",
+    partner1Desc: "Documents d'arpentage, plans de bornage et états descriptifs de division indispensables aux actes authentiques de vente, donation ou succession.",
+    partner2Title: "Conservation Foncière & Cadastre",
+    partner2Desc: "Mise en concordance avec les sections cadastrales, immatriculation au livre foncier et régularisation des comptes inconnus.",
+    partner3Title: "Collectivités Locales & DUAC",
+    partner3Desc: "Dossiers techniques pour permis de lotir, régularisation des constructions (Lois 08-15/22-55) et certificats de conformité.",
+    partner4Title: "Particuliers & Familles",
+    partner4Desc: "Fixation amiable des limites, apaisement des litiges de mitoyenneté et partage successoral équitable et opposable.",
+    partner5Title: "Promoteurs & Entreprises BTP",
+    partner5Desc: "Implantation d'ouvrages, nivellement de précision, suivi VRD et états descriptifs de division de résidences.",
+    partner6Title: "Exploitations & Investisseurs",
+    partner6Desc: "Délimitation de concessions agricoles (APFA), enquêtes foncières pour carte fellah et autorisations de forages.",
+
+    // File Upload
+    labelFile: "Joindre un document (plan, extrait cadastral, acte, photo)",
+    optionalTag: "(Optionnel - Max 10 Mo)",
+    fileUploadPrompt: "Cliquez ou glissez un plan, acte ou photo du terrain (PDF, JPG, PNG, DWG)...",
+    fileUploadSelected: "Fichier sélectionné :",
 
     // Errors
     errName: "Veuillez renseigner votre nom complet.",
@@ -275,39 +332,39 @@ const translations = {
     errEmail: "Veuillez renseigner une adresse email valide.",
 
     // Footer
-    footerTagline: "Cabinet Géomètre Expert Foncier agréé par l'Ordre des Géomètres-Experts (OGEF). Travaux fonciers, cadastraux et topographiques conformes aux normes légales algériennes.",
-    footerBadge1: "Agréé Ordre des Géomètres Experts (OGEF)",
-    footerBadge2: "Interventions sur toute la Wilaya",
+    footerTagline: "Cabinet d'Ingénierie & d'Expertise Foncière Foncier agréé par l'Ordre des Géomètres-Experts (OGEF). Travaux fonciers, cadastraux et topographiques conformes aux normes légales algériennes.",
+    footerBadge1: "Agrément OGEF N° 865 - Koléa",
+    footerBadge2: "Interventions Wilaya de Tipaza & Région",
     footerColServices: "Prestations",
     footerColNav: "Navigation",
     footerColContact: "Nous joindre",
-    footerCopyright: "© Cabinet Géomètre Expert Foncier Agréé OGEF. Tous droits réservés.",
+    footerCopyright: "© Cabinet d'Ingénierie & d'Expertise Foncière Foncier Agréé OGEF. Tous droits réservés.",
     footerBackToTop: "Retour en haut"
   },
 
   ar: {
     // Top Bar & Meta
-    pageTitle: "مكتب المهندس الخبير العقاري المعتمد OGEF | تحديد المعالم، المسح والتسوية العقارية",
-    certifiedBadge: "معتمد لدى الهيئة الوطنية للمهندسين الخبراء العقاريين (OGEF)",
-    officeHours: "الأحد إلى الخميس : 8:00 – 16:00",
+    pageTitle: "مكتب الهندسة والخبرة العقارية - خليل فريد | معتمد OGEF رقم 865 القليعة تيبازة",
+    certifiedBadge: "مكتب معتمد لدى هيئة OGEF رقم 865",
+    officeHours: "الدوام : 09:00 – 16:30 (عدا الجمعة)",
     callUs: "اتصل بنا",
 
     // Nav
-    brandTitle: "مكتب المهندس الخبير العقاري",
-    brandSubtitle: "معتمد OGEF • الخبرة العقارية والطبوغرافية",
+    brandTitle: "مكتب الهندسة والخبرة العقارية",
+    brandSubtitle: "خليل فريد • معتمد OGEF رقم 865 • كركوبة، القليعة، تيبازة",
     navHome: "الرئيسية",
-    navServices: "خدماتنا",
+    navServices: "الخدمات والمسح العقاري",
     navCadastre: "التسوية والقوانين",
-    navLivrables: "نماذج الأعمال",
-    navProcess: "منهجية العمل",
-    navCabinet: "عن المكتب",
-    navTestimonials: "آراء العملاء",
+    navLivrables: "المخططات ونماذج الأعمال",
+    navProcess: "مراحل التكفل بالملف",
+    navCabinet: "عن المكتب والاعتماد",
+    navTestimonials: "ميثاق المهنة والشركاء",
     navFaq: "الأسئلة الشائعة",
-    navContact: "اتصل بنا",
+    navContact: "طلب عرض سعر مجاني",
     btnFreeQuote: "عرض سعر مجاني",
 
     // Hero
-    heroBadge: "معتمد لدى الهيئة الوطنية للمهندسين الخبراء العقاريين (OGEF)",
+    heroBadge: "معتمد لدى الهيئة الوطنية للمهندسين الخبراء العقاريين (OGEF رقم 865)",
     heroTitle: "أمّنوا حدود عقاراتكم وسوّوا وضعياتكم بكل ثقة وراحة بال",
     heroDesc: "تحديد المعالم (البورناج)، تسوية العقارات (القوانين 08/15 و 22/55 و 02-07)، تقسيم وتجزئة الأراضي، مخططات المسح، شهادة الحيازة والطبوغرافيا: ننجز كافة أعمالكم بدقة مطابقة للتشريع الجزائري.",
     btnHeroQuote: "طلب عرض سعر مجاني",
@@ -377,13 +434,13 @@ const translations = {
     servCadastreTitle: "مخططات المسح ومخططات الأراضي",
     servCadastreDesc: "إعداد المخططات المطابقة لقسمات المسح العقاري وتسوية التداخل والترقيم لدى المحافظة العقارية.",
 
-    servCompteInconnuTitle: "العقار غير المطالب به وحساب المجهول",
+    servCompteInconnuTitle: "تسوية حساب المجهول والعقار غير المطالب به",
     servCompteInconnuDesc: "إعداد ملفات تسوية وإخراج العقارات المقيدة في حساب المجهول أو حساب العقار غير المطالب به لدى مصالح المسح.",
 
     servEstimationTitle: "تقييم وتثمين العقارات",
     servEstimationDesc: "تحديد القيمة السوقية الحقيقية للأراضي العارية، البنايات، المزارع والمحلات التجارية والمستودعات.",
 
-    servLoi0815Title: "تسوية البنايات (القانون 08/15 و 22/55)",
+    servLoi0815Title: "مطابقة البنايات (القانون 08-15 و 22-55)",
     servLoi0815Desc: "إعداد ملفات مطابقة البنايات غير المكتملة أو المشيدة دون رخصة في إطار أحكام القانونين 08/15 و 22/55.",
 
     servVRDTitle: "الطبوغرافيا، الجيوديزيا وشبكات الطرق (VRD)",
@@ -423,6 +480,10 @@ const translations = {
 
     // Cabinet
     cabinetTag: "عن المكتب",
+    facadePlaqueTag: "المقر الرسمي للمكتب بالقليعة",
+    facadeName: "الأستاذ : خليل فريد",
+    facadeReg: "اعتماد مسح الأراضي رقم 865",
+    facadeSub: "مهندس خبير عقاري معتمد لدى مصلحة مسح الأراضي والهيئة الوطنية OGEF • إقامة الساحل كركوبة (خلف بنك CPA)، كركوبة - القليعة - تيبازة.",
     cabinetTitle: "فريق من المحترفين المعتمدين في خدمتكم",
     cabinetLead: "مسجل بالجدول الوطني للهيئة الوطنية للمهندسين الخبراء العقاريين (OGEF)، يجمع مكتبنا بين الخبرة الميدانية الواسعة وأحدث تقنيات القياس المساحي (GPS RTK السنتيمتري، محطات الرصد المتكاملة، ونظم المعلومات الجغرافية).",
     cabCheck1Title: "اعتماد رسمي OGEF وأداء اليمين القانونية",
@@ -466,13 +527,13 @@ const translations = {
     faqTitle: "إجابات الخبير على تساؤلاتكم العقارية",
     faqSubtitle: "كل ما تحتاج معرفته قبل البدء في مشروعك العقاري بكل طمأنينة.",
     faqQ1: "ما هي أهمية تحديد المعالم (البورناج)؟",
-    faqA1: "تحديد المعالم الوجاهي هو الإجراء القانوني الوحيد الذي يثبت حدود الملكية بصفة قطعية بين العقارات المجاورة، ويمنع التعديات ويحمي القيمة المالية والقانونية لعقارك.",
+    faqA1: "تحديد المعالم الوجاهي هو إجراء رسمي ينجزه مهندس خبير عقاري معتمد لتثبيت الحدود الفاصلة بين العقارات المتجاورة بدقة وبمحضر رسمي موقع، مما يقي من النزاعات ويوفر مرجعاً قانونياً ثابتاً لدى الموثقين والجهات القضائية والمحافظة العقارية.",
     faqQ2: "كيف تتم تسوية البنايات في إطار القانون 08/15 و 22/55؟",
     faqA2: "تسمح هذه القوانين بتسوية ومطابقة البنايات غير المكتملة أو المنجزة بدون رخصة. يقوم المهندس الخبير العقاري بإعداد مخططات الوضعية الحالية والمطابقة والجدول الوصفي اللازم لإيداع الملف لدى البلدية.",
     faqQ3: "هل عرض السعر (Devis) مجاني وبدون التزام؟",
     faqA3: "نعم، بكل تأكيد. نقوم بدراسة مشروعكم وتقديم عرض سعر دقيق ومفصل ومجاني تماماً خلال 48 ساعة وبدون أي رسوم خفية.",
     faqQ4: "هل مخططاتكم ومحاضركم مقبولة لدى مسح الأراضي والمحافظة العقارية؟",
-    faqA4: "نعم، بصفتنا مهندسين خبراء عقاريين محلفين ومعتمدين لدى الهيئة الوطنية OGEF، فإن جميع وثائقنا تحظى بالقوة القانونية الكاملة ومقبولة لدى المحافظات العقارية، المحاكم ومصالح الدولة.",
+    faqA4: "نعم، بصفتنا مهندسين خبراء عقاريين معتمدين ومقيدين في جدول الهيئة الوطنية (OGEF)، فإن مخططاتنا ومحاضرنا ووثائق القياس معدة وفق المعايير التقنية المعمول بها ومقبولة مباشرة لدى المحافظة العقارية، مسح الأراضي، الموثقين والجهات القضائية المختصة.",
 
     // Contact
     contactTag: "اتصل بنا",
@@ -481,11 +542,11 @@ const translations = {
     contactInfoTitle: "معلومات الاتصال بالمكتب",
     contactInfoDesc: "نحن في خدمتكم لتقديم الاستشارة والمرافقة الميدانية في جميع معاملاتكم العقارية والمطابقة.",
     contactAddressLabel: "العنوان",
-    contactAddressVal: "عنوان المكتب، المدينة، الولاية",
+    contactAddressVal: "إقامة الساحل كركوبة، خلف بنك CPA، كركوبة - القليعة - تيبازة",
     contactPhoneLabel: "الهاتف",
     contactEmailLabel: "البريد الإلكتروني",
     contactHoursLabel: "أوقات العمل",
-    contactHoursVal: "الأحد إلى الخميس، 8:00 – 16:00",
+    contactHoursVal: "يومياً عدا الجمعة : من 09:00 إلى 16:30",
     quickCallTitle: "هل تحتاج إلى استشارة عاجلة؟",
     quickCallDesc: "مهندسونا رهن إشارتكم عبر الهاتف أو تطبيق واتساب خلال أوقات العمل الرسمية.",
     btnCallDirect: "الاتصال المباشر بالمكتب",
@@ -507,12 +568,12 @@ const translations = {
     optTopo: "مخطط طبوغرافي وخطوط التسوية",
     optImplantation: "التوقيع والإسقاط الطبوغرافي وشبكات VRD",
     optSurfaces: "وثيقة القياس وحساب المساحات المعتمدة",
-    optCopro: "الملكية المشتركة والجدول الوصفي للتقسيم (EDD)",
+    optCopro: "الملكية المشتركة والجدول الوصفي للتقسيم (الملكية المشتركة)",
     optLoi0815: "تسوية البنايات في إطار القانون 08/15 و 22/55",
-    optLoi0207: "ملف عقد الملكية في إطار القانون 02-07",
+    optLoi0207: "ملف عقد الملكية (القانون 02-07)",
     optPossession: "طلب شهادة الحيازة",
     optHabitatRural: "مخطط الكتلة والموقع للبناء الريفي",
-    optCompteInconnu: "تسوية العقار غير المطالب به وحساب المجهول",
+    optCompteInconnu: "تسوية تسوية حساب المجهول والعقار غير المطالب به",
     optAgricole: "تحقيقات بطاقة فلاح ورخصة حفر بئر ارتوازي",
     optExpertise: "الخبرات العقارية والاستشارية وتثمين العقار",
     optOther: "خدمة عقارية أو مسحية أخرى",
@@ -525,7 +586,7 @@ const translations = {
     btnSubmitQuote: "إرسال طلب عرض السعر المجاني",
     btnSending: "جارٍ إرسال طلبكم...",
     // QR Code and Networks
-    btnOpenQrModal: "رمز QR للتواصل والشبكات",
+    btnOpenQrModal: "رمز QR",
     qrModalTitle: "امسح رمز QR للتواصل مع المهندس الخبير",
     qrModalSubtitle: "احفظ معلومات الاتصال وادخل على شبكاتنا مباشرة عبر كاميرا هاتفك.",
     qrTabVcard: "حفظ جهة الاتصال (vCard)",
@@ -547,6 +608,60 @@ const translations = {
     copiedQuoteToast: "تم نسخ تفاصيل الطلب إلى الحافظة !",
     quoteSummaryHeader: "ملخص طلبكم :",
 
+    // Android Bottom App Navigation
+    bottomNavHome: "الرئيسية",
+    bottomNavServices: "الخدمات",
+    bottomNavDevis: "طلب تسعيرة",
+    bottomNavWhatsApp: "واتساب",
+    bottomNavQr: "رمز QR",
+
+    
+    // Prestation Category Filters
+    catAll: "جميع المجالات (14)",
+    catBornage: "1. تحديد المعالم والقسمة",
+    catRegul: "2. التسوية والقوانين",
+    catCadastre: "3. المسح ووثيقة القياس",
+    catCopro: "4. التجزئة والملكية المشتركة",
+    catTopo: "5. الطبوغرافيا والتهيئة",
+    catExpertise: "6. الخبرة والتحقيقات",
+
+    // Contextual CTA
+    ctaPrestationsTitle: "لم تجد بالضبط الحالة المطابقة لوضعيتك العقارية ؟",
+    ctaPrestationsDesc: "كل وضعية عقارية لها خصوصيتها. اتصل بنا مباشرة للحصول على توجيه مسبق ودراسة أولية مجانية.",
+    btnCallNow: "الاتصال بالمكتب",
+
+    // Trust Pillars (Replacing fake stats)
+    pillar1Title: "اعتماد هيئة OGEF رقم 865",
+    pillar1Desc: "مقيد في الجدول الوطني للمهندسين الخبراء العقاريين • مؤدى اليمين",
+    pillar2Title: "دقة سنتيمترية بأجهزة GNSS RTK",
+    pillar2Desc: "قياسات دقيقة بالأقمار الصناعية ومحطات رصد آلية متطورة",
+    pillar3Title: "استجابة سريعة خلال 48 ساعة",
+    pillar3Desc: "دراسة تقنية أولية وعرض سعر شفاف ومفصل",
+    pillar4Title: "تغطية شاملة لكامل الولاية",
+    pillar4Desc: "تنقلات ميدانية في المناطق الحضرية والريفية والصناعية",
+
+    // Institutional Partners & Ethics (Replacing fake testimonials)
+    partnersTag: "ميثاق المهنة والشركاء",
+    partnersTitle: "معاملات عقارية موثوقة ومطابقة للقوانين",
+    partnersSubtitle: "تخضع كافة أعمالنا لميثاق أخلاقيات المهنة لدى الهيئة الوطنية OGEF، ومطابقة لأعلى المعايير القانونية.",
+    partner1Title: "المكاتب التوثيقية (الموثقون)",
+    partner1Desc: "إعداد وثائق القياس، مخططات التحديد والجدول الوصفي اللازمة لتحرير العقود الرسمية للبيع أو الهبة أو القسمة.",
+    partner2Title: "المحافظة العقارية ومسح الأراضي",
+    partner2Desc: "مطابقة المخططات مع أقسام مسح الأراضي، الترقيم في السجل العقاري وتسوية حساب المجهول.",
+    partner3Title: "البلديات ومديريات التعمير (DUAC)",
+    partner3Desc: "إعداد الملفات التقنية لرخص التجزئة، مطابقة وتسوية البنايات (القانون 08-15 و 22-55) وشهادات المطابقة.",
+    partner4Title: "المواطنون والعائلات",
+    partner4Desc: "تحديد المعالم بالاتفاق الودي، حل نزاعات الجوار وإجراء القسمة الودية التوافقية بين الورثة.",
+    partner5Title: "المرقون العقاريون وشركات البناء",
+    partner5Desc: "توقيع المحاور والمنشآت، تسوية المناسيب، شبكات التهيئة (VRD) وإعداد الجدول الوصفي للإقامات السكنية.",
+    partner6Title: "المستثمرون والمستثمرات الفلاحية",
+    partner6Desc: "تحديد الامتيازات الفلاحية، تحقيقات بطاقة فلاح وتراخيص حفر الآبار الارتوازية وتثبيت المناطق الصناعية.",
+
+    // File Upload
+    labelFile: "إرفاق وثيقة (مخطط، مستخرج مسح، عقد، صورة)",
+    optionalTag: "(اختياري - 10 ميغابايت كحد أقصى)",
+    fileUploadPrompt: "انقر لاختيار وثيقة أو مخطط للعقار (PDF, JPG, PNG, DWG)...",
+    fileUploadSelected: "الملف المحدد :",
 
     // Errors
     errName: "يرجى إدخال الاسم واللقب كاملاً.",
@@ -555,26 +670,26 @@ const translations = {
     errEmail: "يرجى إدخال بريد إلكتروني صحيح.",
 
     // Footer
-    footerTagline: "مكتب المهندس الخبير العقاري معتمد لدى الهيئة الوطنية للمهندسين الخبراء العقاريين (OGEF). أشغال عقارية، مسحية وطبوغرافية مطابقة للتشريع الجزائري.",
-    footerBadge1: "معتمد لدى الهيئة الوطنية OGEF",
-    footerBadge2: "تدخلات تغطي كامل الولاية",
+    footerTagline: "مكتب الهندسة والخبرة العقارية معتمد لدى الهيئة الوطنية للمهندسين الخبراء العقاريين (OGEF رقم 865). أشغال عقارية، مسحية وطبوغرافية مطابقة للتشريع الجزائري.",
+    footerBadge1: "اعتماد هيئة OGEF رقم 865",
+    footerBadge2: "تدخلات في ولاية تيبازة والولايات المجاورة",
     footerColServices: "الخدمات",
     footerColNav: "روابط سريعة",
     footerColContact: "تواصل معنا",
-    footerCopyright: "© جميع الحقوق محفوظة لمكتب المهندس الخبير العقاري المعتمد OGEF.",
+    footerCopyright: "© جميع الحقوق محفوظة لمكتب الهندسة والخبرة العقارية المعتمد OGEF.",
     footerBackToTop: "الرجوع إلى الأعلى"
   },
 
   en: {
     // Top Bar & Meta
-    pageTitle: "Chartered Land Surveyor Office - OGEF Licensed | Cadastre, Boundary & Legal Regularization",
-    certifiedBadge: "Member of the National Board of Chartered Surveyors (OGEF)",
-    officeHours: "Sunday to Thursday: 8:00 AM – 4:00 PM",
+    pageTitle: "Land Engineering & Surveying Office - Farid Khelil | OGEF Licensed #865 Koléa Tipaza",
+    certifiedBadge: "OGEF Licensed Cabinet #865",
+    officeHours: "Daily except Friday: 9:00 AM – 4:30 PM",
     callUs: "Call us",
 
     // Nav
-    brandTitle: "Chartered Land Surveyor",
-    brandSubtitle: "OGEF Licensed • Land Expertise & Topography",
+    brandTitle: "Land Engineering & Surveying Office",
+    brandSubtitle: "Farid Khelil • OGEF Licensed #865 • Koléa, Tipaza",
     navHome: "Home",
     navServices: "Services",
     navCadastre: "Cadastre & Laws",
@@ -597,7 +712,7 @@ const translations = {
     // Hero Trust
     trustResponseTitle: "Response within 48h",
     trustResponseDesc: "Fast project assessment and no-obligation quote",
-    trustCoverageTitle: "Interventions across the Wilaya",
+    trustCoverageTitle: "Interventions in Tipaza Wilaya & Surroundings",
     trustCoverageDesc: "Rapid deployment in urban & rural areas",
     trustQualityTitle: "OGEF & Cadastral Certified Files",
     trustQualityDesc: "Millimeter measurement and statutory compliance",
@@ -621,7 +736,7 @@ const translations = {
     // Services - General
     servicesTag: "Our Official Services",
     servicesTitle: "Comprehensive land, cadastral and engineering expertise",
-    servicesSubtitle: "Licensed by OGEF, we carry out all surveying, demarcation, regularization, and engineering studies in Algeria.",
+    servicesSubtitle: "OGEF Licensed #865, we carry out all surveying, demarcation, regularization, and engineering studies in Algeria.",
     serviceQuoteLink: "Request a quote for this service",
 
     // Official Algerian Catalog Section
@@ -703,6 +818,10 @@ const translations = {
 
     // Cabinet
     cabinetTag: "The Office",
+    facadePlaqueTag: "Official Office Headquarters",
+    facadeName: "Farid Khelil",
+    facadeReg: "Cadastral Licensed #865",
+    facadeSub: "Licensed Land Surveying & Engineering Office certified by OGEF and National Cadastre. El Sahel Residence Kerkouba (behind CPA Bank), Koléa, Tipaza.",
     cabinetTitle: "A dedicated team of licensed professionals",
     cabinetLead: "Officially registered with the National Board of Chartered Surveyors (OGEF), our firm merges field experience with cutting-edge surveying tech (RTK GNSS, robotic total stations, GIS) to produce legally enforceable deliverables.",
     cabCheck1Title: "Official OGEF License & Sworn Authority",
@@ -765,7 +884,7 @@ const translations = {
     contactPhoneLabel: "Phone",
     contactEmailLabel: "Email",
     contactHoursLabel: "Working Hours",
-    contactHoursVal: "Sunday to Thursday, 8:00 AM – 4:00 PM",
+    contactHoursVal: "Daily except Friday: 9:00 AM – 4:30 PM",
     quickCallTitle: "Need immediate information?",
     quickCallDesc: "Our surveyors are available by phone or WhatsApp during official working hours.",
     btnCallDirect: "Call the Office",
@@ -805,7 +924,7 @@ const translations = {
     btnSubmitQuote: "Request Free Quote",
     btnSending: "Submitting your inquiry...",
     // QR Code and Networks
-    btnOpenQrModal: "Contact & Networks QR Code",
+    btnOpenQrModal: "QR Code",
     qrModalTitle: "Scan the Office QR Code",
     qrModalSubtitle: "Save our contact details and access our networks instantly using your smartphone.",
     qrTabVcard: "Phone Contact (vCard)",
@@ -827,6 +946,60 @@ const translations = {
     copiedQuoteToast: "Quote details copied to clipboard!",
     quoteSummaryHeader: "Summary of your inquiry:",
 
+    // Android Bottom App Navigation
+    bottomNavHome: "Home",
+    bottomNavServices: "Services",
+    bottomNavDevis: "Quote",
+    bottomNavWhatsApp: "WhatsApp",
+    bottomNavQr: "QR Code",
+
+    
+    // Prestation Category Filters
+    catAll: "All Domains (14)",
+    catBornage: "1. Demarcation & Partition",
+    catRegul: "2. Regularization & Laws",
+    catCadastre: "3. Cadastre & Surveying",
+    catCopro: "4. Subdivision & Co-ownership",
+    catTopo: "5. Topography & Civil Works",
+    catExpertise: "6. Appraisal & Inquiries",
+
+    // Contextual CTA
+    ctaPrestationsTitle: "Can't find the exact match for your land case?",
+    ctaPrestationsDesc: "Every land parcel is unique. Contact our chartered surveyor directly for a tailored preliminary evaluation.",
+    btnCallNow: "Call the office",
+
+    // Trust Pillars (Replacing fake stats)
+    pillar1Title: "OGEF Licensed #865",
+    pillar1Desc: "Registered on the National Board of Surveyors • Sworn Expert",
+    pillar2Title: "Centimetric GNSS RTK Precision",
+    pillar2Desc: "Satellite-assisted precision and motorized total stations",
+    pillar3Title: "Rapid 48-Hour Response",
+    pillar3Desc: "Preliminary technical assessment and clear itemized quote",
+    pillar4Title: "Wilaya-Wide Coverage",
+    pillar4Desc: "Rapid field interventions across urban and rural municipalities",
+
+    // Institutional Partners & Ethics (Replacing fake testimonials)
+    partnersTag: "Ethics & Institutional Partners",
+    partnersTitle: "Rigorous Technical & Legal Compliance",
+    partnersSubtitle: "All surveys and plans conform to statutory standards of the National Board of Surveyors (OGEF) and are directly admissible before authorities.",
+    partner1Title: "Notarial Offices",
+    partner1Desc: "Survey deeds (وثيقة القياس), boundary demarcations, and condominium descriptions necessary for authentic notarial contracts.",
+    partner2Title: "Land Registry & Cadastre",
+    partner2Desc: "Concordance with cadastral sections, land registry title issuance, and unknown account clearance.",
+    partner3Title: "Municipalities & Urban Planning (DUAC)",
+    partner3Desc: "Technical files for subdivision permits, building regularization (Laws 08-15/22-55), and compliance certificates.",
+    partner4Title: "Private Citizens & Families",
+    partner4Desc: "Amicable boundary demarcation, neighborhood dispute resolution, and equitable inheritance division.",
+    partner5Title: "Real Estate Developers & Builders",
+    partner5Desc: "Building axis stakeout, precise topographical leveling, civil networks, and condominium divisions.",
+    partner6Title: "Agricultural & Industrial Investors",
+    partner6Desc: "Agricultural concession boundaries, farmer card field investigations, and artesian well authorizations.",
+
+    // File Upload
+    labelFile: "Attach a document (plan, cadastral extract, deed, photo)",
+    optionalTag: "(Optional - Max 10 MB)",
+    fileUploadPrompt: "Click or drag a land plan, deed, or photo (PDF, JPG, PNG, DWG)...",
+    fileUploadSelected: "Selected file:",
 
     // Errors
     errName: "Please enter your full name.",
@@ -835,13 +1008,13 @@ const translations = {
     errEmail: "Please enter a valid email address.",
 
     // Footer
-    footerTagline: "Chartered Land Surveyor Office licensed by the National Board of Chartered Surveyors (OGEF). Cadastral, demarcation, and engineering surveys fully compliant with Algerian statutory laws.",
-    footerBadge1: "Licensed by OGEF (Ordre des Géomètres-Experts)",
-    footerBadge2: "Interventions across the Wilaya",
+    footerTagline: "Land Engineering & Surveying Office Office licensed by the National Board of Chartered Surveyors (OGEF). Cadastral, demarcation, and engineering surveys fully compliant with Algerian statutory laws.",
+    footerBadge1: "OGEF License #865 - Koléa",
+    footerBadge2: "Interventions in Tipaza Wilaya & Surroundings",
     footerColServices: "Services",
     footerColNav: "Navigation",
     footerColContact: "Get in Touch",
-    footerCopyright: "© Chartered Land Surveyor Office - OGEF Licensed. All rights reserved.",
+    footerCopyright: "© Land Engineering & Surveying Office Office - OGEF Licensed. All rights reserved.",
     footerBackToTop: "Back to top"
   }
 };

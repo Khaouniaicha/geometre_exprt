@@ -2,9 +2,15 @@
 <html lang="fr" dir="ltr" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18n="pageTitle">Cabinet Géomètre Expert Foncier Agréé OGEF | Bornage, Cadastre & Régularisation</title>
-  <meta name="description" content="Cabinet Géomètre Expert Foncier Agréé OGEF (Ordre des Géomètres-Experts Fonciers). Bornage contradictoire, régularisation lois 08-15, 22-55 et 02-07, plans cadastraux, topographie et calcul de surfaces. Devis gratuit sous 48h.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#065f46">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="application-name" content="Cabinet Géomètre OGEF">
+  <link rel="manifest" href="manifest.json">
+  <title data-i18n="pageTitle">Cabinet d'Ingénierie & d'Expertise Foncière - Farid Khelil (Agréé OGEF N° 865) | Bornage, Cadastre & Régularisation</title>
+  <meta name="description" content="Cabinet d'Ingénierie & d'Expertise Foncière - Farid Khelil (Agréé OGEF N° 865) (Ordre des Géomètres-Experts Fonciers). Bornage contradictoire, régularisation lois 08-15, 22-55 et 02-07, plans cadastraux, topographie et calcul de surfaces. Devis gratuit sous 48h.">
   
   <!-- Favicon SVG -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23059669' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='12 2 2 7 12 12 22 7 12 2'/%3E%3Cpolyline points='2 17 12 22 22 17'/%3E%3Cpolyline points='2 12 12 17 22 12'/%3E%3C/svg%3E">
@@ -14,7 +20,46 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
+  <link rel="canonical" href="https://geometre-expert-foncier.dz/">
+  <meta property="og:title" content="Cabinet d'Ingénierie & d'Expertise Foncière - Farid Khelil (Agréé OGEF N° 865)">
+  <meta property="og:description" content="Bornage contradictoire, cadastre, régularisation lois 08-15 et 02-07, topographie et division foncière en Algérie.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://geometre-expert-foncier.dz/">
+  <meta property="og:image" content="assets/ogef-logo.png">
+
+  <!-- Schema.org JSON-LD Structured Data for Local Business SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Cabinet d'Ingénierie & d'Expertise Foncière - Farid Khelil (Agréé OGEF N° 865)",
+    "description": "Cabinet de Géomètre-Expert Foncier agréé par l'Ordre des Géomètres-Experts Fonciers (OGEF) en Algérie. Bornage, délimitation, régularisation lois 08-15, 22-55, 02-07, arpentage et topographie.",
+    "image": "assets/ogef-logo.png",
+    "telephone": "+213-24-06-13-19",
+    "email": "faridkhelil16@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Koléa",
+      "addressRegion": "Wilaya de Tipaza",
+      "addressCountry": "DZ"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 36.7538,
+      "longitude": 3.0588
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+      "opens": "08:00",
+      "closes": "16:00"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+  
   <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
 </head>
 <body id="accueil">
 
@@ -22,24 +67,24 @@
   <div class="top-bar">
     <div class="container top-bar-content">
       <div class="top-bar-item ogef-top-badge">
-        <img src="ogef-logo.png" alt="OGEF Logo" class="ogef-micro-logo">
-        <span data-i18n="certifiedBadge">Membre de l'Ordre des Géomètres-Experts Fonciers (OGEF)</span>
+        <img src="assets/ogef-logo.png" alt="OGEF Logo" class="ogef-micro-logo">
+        <span data-i18n="certifiedBadge">Cabinet Agréé OGEF N° 865</span>
       </div>
       <div class="top-bar-divider"></div>
-      <div class="top-bar-item">
+      <div class="top-bar-item top-hours">
         <svg class="top-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        <span data-i18n="officeHours">Dimanche au jeudi : 8 h – 16 h</span>
+        <span data-i18n="officeHours">Tous les jours sauf vendredi : 9h00 – 16h30</span>
       </div>
       <div class="top-bar-divider"></div>
-      <a href="tel:+21300000000" class="top-bar-item top-phone">
+      <a href="tel:+21324061319" class="top-bar-item top-phone">
         <svg class="top-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span>+213 00 00 00 00</span>
+        <span>024 06 13 19</span>
       </a>
 
       <!-- Quick QR Code Button in Top Bar -->
       <button type="button" class="top-bar-item top-qr-btn" id="openQrBtnTop" aria-label="Afficher le QR code de contact">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="top-icon"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M7 7h.01M17 7h.01M7 17h.01M17 17h.01"/></svg>
-        <span data-i18n="btnOpenQrModal">QR Code Contact & Réseaux</span>
+        <span data-i18n="btnOpenQrModal">QR Code</span>
       </button>
 
       <!-- Multilingual Switcher -->
@@ -56,25 +101,21 @@
     <div class="container navbar-container">
       <a href="#accueil" class="brand-logo" aria-label="Accueil">
         <div class="ogef-header-brand">
-          <img src="ogef-logo.png" alt="OGEF - Ordre des Géomètres-Experts Fonciers" class="ogef-nav-logo">
+          <img src="assets/ogef-logo.png" alt="OGEF - Ordre des Géomètres-Experts Fonciers" class="ogef-nav-logo">
         </div>
         <div class="logo-text">
-          <span class="logo-title" data-i18n="brandTitle">Cabinet Géomètre Expert</span>
-          <span class="logo-subtitle" data-i18n="brandSubtitle">Agréé OGEF • Expertise Foncière & Topographie</span>
+          <span class="logo-title" data-i18n="brandTitle">Cabinet d'Ingénierie & d'Expertise Foncière</span>
+          <span class="logo-subtitle" data-i18n="brandSubtitle">Farid Khelil • Agréé OGEF N° 865 • Koléa, Tipaza</span>
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
+      <!-- Desktop Nav Links (Streamlined 5 Core Anchors) -->
       <nav class="nav-menu" id="navMenu">
         <a href="#accueil" class="nav-link active" data-i18n="navHome">Accueil</a>
-        <a href="#services" class="nav-link" data-i18n="navServices">Prestations</a>
-        <a href="#cadastre" class="nav-link" data-i18n="navCadastre">Régularisation & Lois</a>
+        <a href="#prestations" class="nav-link" data-i18n="navServices">Prestations</a>
         <a href="#realisations" class="nav-link" data-i18n="navLivrables">Réalisations</a>
         <a href="#processus" class="nav-link" data-i18n="navProcess">Démarche</a>
         <a href="#cabinet" class="nav-link" data-i18n="navCabinet">Le cabinet</a>
-        <a href="#temoignages" class="nav-link" data-i18n="navTestimonials">Avis clients</a>
-        <a href="#faq" class="nav-link" data-i18n="navFaq">FAQ</a>
-        <a href="#contact" class="nav-link" data-i18n="navContact">Contact</a>
       </nav>
 
       <!-- Action Button -->
@@ -131,7 +172,7 @@
       <div class="container hero-container">
         <div class="hero-content">
           <div class="hero-badge ogef-hero-badge">
-            <img src="ogef-logo.png" alt="OGEF" class="ogef-pill-img">
+            <img src="assets/ogef-logo.png" alt="OGEF" class="ogef-pill-img">
             <span class="badge-text" data-i18n="heroBadge">Cabinet Agréé par l'Ordre des Géomètres-Experts (OGEF)</span>
           </div>
 
@@ -148,7 +189,7 @@
               <span data-i18n="btnHeroQuote">Demander un devis gratuit</span>
               <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
             </a>
-            <a href="https://wa.me/21300000000?text=Bonjour,%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20travaux%20fonciers." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg" id="heroWhatsAppBtn">
+            <a href="https://wa.me/213699378444?text=Bonjour,%20je%20souhaite%20obtenir%20des%20informations%20sur%20vos%20travaux%20fonciers." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg" id="heroWhatsAppBtn">
               <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.668-.699c.969.54 1.771.82 2.792.82 3.183 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.807-5.769-5.807zm3.377 8.21c-.145.405-.729.743-1.021.789-.283.045-.636.088-2.029-.488-1.782-.736-2.92-2.548-3.009-2.668-.088-.12-1.282-1.706-1.282-3.254 0-1.548.811-2.31 1.102-2.628.29-.318.636-.398.847-.398.212 0 .424.003.61.011.196.008.458-.074.717.549.264.636.899 2.196.979 2.355.079.159.133.344.027.556-.106.212-.159.344-.318.529-.159.186-.334.415-.477.557-.159.159-.324.333-.14.65.185.318.825 1.36 1.77 2.202 1.218 1.085 2.242 1.42 2.56 1.579.318.159.504.133.69-.079.186-.212.795-.928 1.007-1.246.212-.318.424-.265.716-.159.292.106 1.854.874 2.172 1.033.318.159.53.238.61.371.079.133.079.769-.066 1.174z"/></svg>
               <span data-i18n="btnWhatsApp">Échanger sur WhatsApp</span>
             </a>
@@ -281,162 +322,326 @@
       </div>
     </section>
 
-    <!-- SECTION SPÉCIALISÉE : CADRE JURIDIQUE & CADASTRE ALGÉRIEN -->
-    <section class="section algerian-cadastre-section" id="cadastre">
+        <!-- SECTION UNIFIÉE : PRESTATIONS OFFICIELLES & CADASTRE (6 PÔLES D'INTERVENTION) -->
+    <section class="section prestations-section" id="prestations">
+      <!-- Anchors for backward compatibility -->
+      <span id="cadastre" class="section-anchor"></span>
+      <span id="services" class="section-anchor"></span>
+
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-tag" data-i18n="catalogTag">Cadre Juridique & Cadastre Algérien</div>
-          <h2 class="section-title" data-i18n="catalogTitle">Nos domaines d'intervention spécialisés</h2>
-          <p class="section-subtitle" data-i18n="catalogSubtitle">
-            Conformité stricte avec les lois foncières, le cadastre, la conservation foncière et les services de l'urbanisme.
+          <div class="section-tag" data-i18n="servicesTag">Nos prestations officielles</div>
+          <h2 class="section-title" data-i18n="servicesTitle">Une expertise foncière, cadastrale et technique complète</h2>
+          <p class="section-subtitle" data-i18n="servicesSubtitle">
+            Agréés par l'OGEF, nous assurons l'ensemble des opérations d'arpentage, de bornage, de régularisation et d'études techniques en Algérie.
           </p>
         </div>
 
-        <div class="cadastre-catalog-grid">
-          <!-- 1. وثيقة القياس -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">📐</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servDocArpentageTitle">Document d'Arpentage (وثيقة القياس)</h3>
-              <p class="catalog-card-desc" data-i18n="servDocArpentageDesc">Établissement de la وثيقة القياس officielle obligatoire pour toute transaction, mutation ou mise à jour cadastrale.</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Surfaces')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+        <!-- Category Filter Pills (Find need in under 10 seconds) -->
+        <div class="prestation-filters" id="prestationFilters">
+          <button type="button" class="filter-pill active" data-filter="all">
+            <span data-i18n="catAll">Tous les domaines (14)</span>
+          </button>
+          <button type="button" class="filter-pill" data-filter="bornage">
+            <span data-i18n="catBornage">1. Bornage & Délimitation</span>
+          </button>
+          <button type="button" class="filter-pill" data-filter="regul">
+            <span data-i18n="catRegul">2. Régularisation & Lois</span>
+          </button>
+          <button type="button" class="filter-pill" data-filter="cadastre">
+            <span data-i18n="catCadastre">3. Cadastre & Arpentage</span>
+          </button>
+          <button type="button" class="filter-pill" data-filter="copro">
+            <span data-i18n="catCopro">4. Division & Copropriété</span>
+          </button>
+          <button type="button" class="filter-pill" data-filter="topo">
+            <span data-i18n="catTopo">5. Topographie & VRD</span>
+          </button>
+          <button type="button" class="filter-pill" data-filter="expertise">
+            <span data-i18n="catExpertise">6. Expertise & Enquêtes</span>
+          </button>
+        </div>
+
+        <!-- 14 Cards Classified into the 6 Poles -->
+        <div class="prestations-catalog-grid" id="prestationsGrid">
+          
+          <!-- PÔLE 1 : BORNAGE & DÉLIMITATION -->
+          <!-- Card 1: Bornage contradictoire -->
+          <div class="prest-card" data-category="bornage">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <span class="prest-badge badge-ogef">Procédure Contradictoire</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servBornageTitle">Bornage & Partage Amiable (القسمة الودية)</h3>
+            <p class="prest-card-desc" data-i18n="servBornageDesc">Fixation contradictoire des limites, pose de bornes officielles normalisées et rédaction du procès-verbal opposable.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Bornage')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 2. عقد الملكية القانون 02-07 -->
-          <div class="catalog-card law-card">
-            <div class="catalog-card-icon">📜</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servLoi0207Title">Acte de Propriété (Loi 02-07)</h3>
-              <p class="catalog-card-desc" data-i18n="servLoi0207Desc">Constitution du dossier technique pour l'obtention de l'acte de propriété dans le cadre de la régularisation foncière (القانون 02-07).</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Loi0207')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- PÔLE 2 : RÉGULARISATION & CONFORMITÉ -->
+          <!-- Card 2: Loi 08-15 / 22-55 -->
+          <div class="prest-card law-card" data-category="regul">
+            <div class="prest-card-top">
+              <div class="prest-icon-box icon-law">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><path d="M12 3v18"/><path d="M5 8l7-5 7 5"/><path d="M3 13l4-2 4 2-4 2-4-2z"/><path d="M13 13l4-2 4 2-4 2-4-2z"/></svg>
+              </div>
+              <span class="prest-badge badge-law">Loi 08-15 & 22-55</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servLoi0815Title">Conformité Bâti (Lois 08-15 & 22-55)</h3>
+            <p class="prest-card-desc" data-i18n="servLoi0815Desc">Dossier de régularisation et d'achèvement des constructions dans le cadre des lois 08-15 et 22-55 (certificat de conformité).</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Loi0815')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 3. شهادة الحيازة -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">🏛️</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servPossessionTitle">Certificat de Possession (شهادة الحيازة)</h3>
-              <p class="catalog-card-desc" data-i18n="servPossessionDesc">Constitution et suivi des dossiers de demande de certificat de possession pour terrains non titrés.</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Possession')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- Card 3: Loi 02-07 Acte de propriété -->
+          <div class="prest-card law-card" data-category="regul">
+            <div class="prest-card-top">
+              <div class="prest-icon-box icon-law">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <span class="prest-badge badge-law">Loi 02-07</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servLoi0207Title">Acte de Propriété (Loi 02-07)</h3>
+            <p class="prest-card-desc" data-i18n="servLoi0207Desc">Constitution du dossier technique pour l'obtention de l'acte de propriété dans le cadre de la régularisation foncière (القانون 02-07).</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Loi0207')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 4. البناء الريفي -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">🏡</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servHabitatRuralTitle">Habitat Rural (البناء الريفي)</h3>
-              <p class="catalog-card-desc" data-i18n="servHabitatRuralDesc">Élaboration du plan de masse et plan de situation cotés exigés pour l'aide et le permis de construire rural.</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('HabitatRural')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- Card 4: Certificat de possession -->
+          <div class="prest-card" data-category="regul">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><path d="M3 21h18"/><path d="M5 21V7l8-4 8 4v14"/><path d="M9 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+              </div>
+              <span class="prest-badge">Terrains Non Titrés</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servPossessionTitle">Certificat de Possession (شهادة الحيازة)</h3>
+            <p class="prest-card-desc" data-i18n="servPossessionDesc">Constitution et suivi des dossiers de demande de certificat de possession pour terrains non titrés.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Possession')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 5. تسوية البنايات القانون 08/15 و 22/55 -->
-          <div class="catalog-card law-card">
-            <div class="catalog-card-icon">⚖️</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servLoi0815Title">Conformité Bâti (Lois 08-15 & 22-55)</h3>
-              <p class="catalog-card-desc" data-i18n="servLoi0815Desc">Dossier de régularisation et d'achèvement des constructions dans le cadre des lois 08-15 et 22-55 (certificat de conformité).</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Loi0815')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- PÔLE 3 : CADASTRE & ARPENTAGE -->
+          <!-- Card 5: Document d'Arpentage (وثيقة القياس) -->
+          <div class="prest-card highlight-prest" data-category="cadastre">
+            <div class="prest-card-top">
+              <div class="prest-icon-box icon-highlight">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><path d="M2 12h20"/><path d="M6 12v-3"/><path d="M10 12v-5"/><path d="M14 12v-3"/><path d="M18 12v-5"/><rect x="2" y="7" width="20" height="10" rx="2"/></svg>
+              </div>
+              <span class="prest-badge badge-urgent">Obligatoire Cadastre</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servDocArpentageTitle">Document d'Arpentage (وثيقة القياس)</h3>
+            <p class="prest-card-desc" data-i18n="servDocArpentageDesc">Établissement de la وثيقة القياس officielle obligatoire pour toute transaction, mutation ou mise à jour cadastrale.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-primary" onclick="selectPrestation('Surfaces')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 6. حساب المجهول والعقار غير المطالب به -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">🔍</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servCompteInconnuTitle">Biens Non Réclamés & Compte Inconnu</h3>
-              <p class="catalog-card-desc" data-i18n="servCompteInconnuDesc">Dossiers de régularisation pour les biens inscrits au compte des inconnus (حساب المجهول) ou non réclamés (غير مطالب به).</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('CompteInconnu')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- Card 6: Compte inconnu & Biens non réclamés -->
+          <div class="prest-card" data-category="cadastre">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              </div>
+              <span class="prest-badge">Cadastre & Enquêtes</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servCompteInconnuTitle">Biens Non Réclamés & Compte Inconnu</h3>
+            <p class="prest-card-desc" data-i18n="servCompteInconnuDesc">Dossiers de régularisation pour les biens inscrits au compte des inconnus (حساب المجهول) ou non réclamés (غير مطالب به).</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('CompteInconnu')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 7. بطاقة فلاح وحفر بئر ارتوازي -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">💧</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servAgricoleTitle">Carte Fellah & Forage de Puits</h3>
-              <p class="catalog-card-desc" data-i18n="servAgricoleDesc">Enquêtes foncières certifiées pour l'obtention de la carte d'agriculteur (بطاقة فلاح) et autorisations de forage de puits artésien.</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Agricole')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- Card 7: Habitat Rural & Plan de masse -->
+          <div class="prest-card" data-category="cadastre">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <span class="prest-badge">Aide Rural & FNPOS</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servHabitatRuralTitle">Habitat Rural (البناء الريفي)</h3>
+            <p class="prest-card-desc" data-i18n="servHabitatRuralDesc">Élaboration du plan de masse et plan de situation cotés exigés pour l'aide et le permis de construire rural.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('HabitatRural')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 8. الاستثمار الفلاحي والصناعي والسياحي -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">🏭</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servInvestissementTitle">Investissement Agricole & Industriel</h3>
-              <p class="catalog-card-desc" data-i18n="servInvestissementDesc">Accompagnement technique et délimitation de concessions agricoles (APFA), zones industrielles et projets touristiques.</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Autre')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- PÔLE 4 : DIVISION & COPROPRIÉTÉ -->
+          <!-- Card 8: Permis de Lotir & Division -->
+          <div class="prest-card" data-category="copro">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              </div>
+              <span class="prest-badge">APC & DUAC</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servPermisLotirTitle">Permis de Lotir & Division (رخصة التجزئة)</h3>
+            <p class="prest-card-desc" data-i18n="servPermisLotirDesc">Plans parcellaires de morcellement et dossiers complets pour l'obtention du permis de lotir auprès des APC et DUAC.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Division de terrain')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 9. الجدول الوصفي للتقسيم (EDD) -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">🏢</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servEDDTitle">État Descriptif de Division (الجدول الوصفي)</h3>
-              <p class="catalog-card-desc" data-i18n="servEDDDesc">Plans d'intérieurs et calcul des quotes-parts et millièmes de copropriété pour immeubles et ensembles immobiliers.</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Copropriété')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- Card 9: EDD & Copropriété -->
+          <div class="prest-card" data-category="copro">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="22.01"/><line x1="15" y1="22" x2="15" y2="22.01"/><line x1="8" y1="6" x2="8.01" y2="6"/><line x1="16" y1="6" x2="16.01" y2="6"/><line x1="8" y1="10" x2="8.01" y2="10"/><line x1="16" y1="10" x2="16.01" y2="10"/><line x1="8" y1="14" x2="8.01" y2="14"/><line x1="16" y1="14" x2="16.01" y2="14"/><line x1="8" y1="18" x2="8.01" y2="18"/><line x1="16" y1="18" x2="16.01" y2="18"/></svg>
+              </div>
+              <span class="prest-badge">Actes Notariés</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servEDDTitle">État Descriptif de Division (الجدول الوصفي)</h3>
+            <p class="prest-card-desc" data-i18n="servEDDDesc">Plans d'intérieurs et calcul des quotes-parts et millièmes de copropriété pour immeubles et ensembles immobiliers.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Copropriété')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 10. رخصة التجزئة والقسمة الودية -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">✂️</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servPermisLotirTitle">Permis de Lotir & Division (رخصة التجزئة)</h3>
-              <p class="catalog-card-desc" data-i18n="servPermisLotirDesc">Plans parcellaires de morcellement et dossiers complets pour l'obtention du permis de lotir auprès des APC et DUAC.</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Division de terrain')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- Card 10: Plans de cadastre & parcellaires -->
+          <div class="prest-card" data-category="cadastre">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+              </div>
+              <span class="prest-badge">Conservation Foncière</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servCadastreTitle">Plans de Cadastre & Parcellaires</h3>
+            <p class="prest-card-desc" data-i18n="servCadastreDesc">Relevés de délimitation parcellaire et mise en concordance avec les sections cadastrales de la Conservation Foncière.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Plan topographique')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 11. مخططات المسح ومخططات الأراضي -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">🗺️</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servCadastreTitle">Plans de Cadastre & Parcellaires</h3>
-              <p class="catalog-card-desc" data-i18n="servCadastreDesc">Relevés de délimitation parcellaire et mise en concordance avec les sections cadastrales de la Conservation Foncière.</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Plan topographique')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- PÔLE 5 : TOPOGRAPHIE & VRD -->
+          <!-- Card 11: Topographie, Géodésie & VRD -->
+          <div class="prest-card" data-category="topo">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <span class="prest-badge badge-ogef">GNSS RTK & DAO</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servVRDTitle">Topographie, Géodésie & VRD</h3>
+            <p class="prest-card-desc" data-i18n="servVRDDesc">Levés altimétriques, implantation d'ouvrages, réseaux d'assainissement, eau potable et voiries (VRD) pour chantiers de BTP.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Plan topographique')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- 12. تقييم العقارات والخبرة الاستشارية -->
-          <div class="catalog-card">
-            <div class="catalog-card-icon">📊</div>
-            <div class="catalog-card-body">
-              <h3 class="catalog-card-title" data-i18n="servEstimationTitle">Évaluation & Estimation Immobilière</h3>
-              <p class="catalog-card-desc" data-i18n="servEstimationDesc">Expertise de la valeur marchande de terrains nus, bâtis, exploitations agricoles et locaux commerciaux.</p>
-              <a href="#contact" class="catalog-quote-link" onclick="selectPrestation('Expertise')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span> &rarr;
+          <!-- PÔLE 6 : EXPERTISE & ENQUÊTES -->
+          <!-- Card 12: Expertise Foncière & Conseil -->
+          <div class="prest-card" data-category="expertise">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span class="prest-badge">Juridique & Amiable</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servExpertiseTitle">Expertise Foncière & Conseil</h3>
+            <p class="prest-card-desc" data-i18n="servExpertiseDesc">Expertises amiables et judiciaires, évaluation de biens, estimation vénale et résolution de conflits de mitoyenneté.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Expertise')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
               </a>
             </div>
+          </div>
+
+          <!-- Card 13: Évaluation & Estimation -->
+          <div class="prest-card" data-category="expertise">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </div>
+              <span class="prest-badge">Valeur Marchande</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servEstimationTitle">Évaluation & Estimation Immobilière</h3>
+            <p class="prest-card-desc" data-i18n="servEstimationDesc">Expertise de la valeur marchande de terrains nus, bâtis, exploitations agricoles et locaux commerciaux.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Expertise')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 14: Investissement Agricole, Concessions & Carte Fellah -->
+          <div class="prest-card" data-category="expertise">
+            <div class="prest-card-top">
+              <div class="prest-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="prest-svg"><path d="M12 2a10 10 0 0 0-10 10c0 5.25 7 10 10 10s10-4.75 10-10A10 10 0 0 0 12 2z"/><path d="M12 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></svg>
+              </div>
+              <span class="prest-badge">Concessions APFA</span>
+            </div>
+            <h3 class="prest-card-title" data-i18n="servAgricoleTitle">Carte Fellah & Forage de Puits</h3>
+            <p class="prest-card-desc" data-i18n="servAgricoleDesc">Enquêtes foncières certifiées pour l'obtention de la carte d'agriculteur (بطاقة فلاح) et autorisations de forage de puits artésien.</p>
+            <div class="prest-card-footer">
+              <a href="#contact" class="btn btn-sm btn-outline-primary" onclick="selectPrestation('Agricole')">
+                <span data-i18n="serviceQuoteLink">Demander un devis</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" class="prest-arrow"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quick Contextual CTA (Point 4) -->
+        <div class="contextual-cta-banner">
+          <div class="cta-banner-text">
+            <h4 data-i18n="ctaPrestationsTitle">Vous ne trouvez pas exactement votre cas de figure ?</h4>
+            <p data-i18n="ctaPrestationsDesc">Chaque situation foncière est spécifique. Contactez directement notre géomètre-expert pour une orientation préalable personnalisée.</p>
+          </div>
+          <div class="cta-banner-actions">
+            <a href="tel:+21324061319" class="btn btn-outline-white btn-sm" id="ctaCallBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span data-i18n="btnCallNow">Appeler le cabinet</span>
+            </a>
+            <a href="#contact" class="btn btn-primary btn-sm">
+              <span data-i18n="btnHeroQuote">Demander un devis gratuit</span>
+            </a>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -455,7 +660,7 @@
           <!-- Livrable 1 : Plan Architectural & Division de Surfaces (Image 1) -->
           <div class="deliverable-card">
             <div class="deliverable-img-box">
-              <img src="plan-architectural.jpg" alt="Plan Architectural & Calcul de Surfaces" class="deliverable-img">
+              <img src="assets/plan-architectural.jpg" alt="Plan Architectural & Calcul de Surfaces" class="deliverable-img">
               <div class="deliverable-overlay">
                 <span class="deliverable-badge">Mesurage & Analyse Spatiale</span>
               </div>
@@ -476,7 +681,7 @@
           <!-- Livrable 2 : Catalogue Officiel d'Intervention Foncière (Image 2) -->
           <div class="deliverable-card">
             <div class="deliverable-img-box">
-              <img src="prestations-cadastrales.png" alt="Catalogue des Prestations Cadastrales et Réglementaires" class="deliverable-img">
+              <img src="assets/prestations-cadastrales.png" alt="Catalogue des Prestations Cadastrales et Réglementaires" class="deliverable-img">
               <div class="deliverable-overlay">
                 <span class="deliverable-badge">Cadastre & Lois Foncières</span>
               </div>
@@ -497,110 +702,7 @@
       </div>
     </section>
 
-    <!-- PRESTATIONS GÉNÉRALES -->
-    <section class="section services-section" id="services">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag" data-i18n="servicesTag">Nos prestations officielles</div>
-          <h2 class="section-title" data-i18n="servicesTitle">Une expertise foncière, cadastrale et technique complète</h2>
-          <p class="section-subtitle" data-i18n="servicesSubtitle">
-            Agréés par l'OGEF, nous assurons l'ensemble des opérations d'arpentage, de bornage, de régularisation et d'études techniques en Algérie.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <!-- Service 1: Bornage -->
-          <div class="service-card" data-service="Bornage">
-            <div class="service-icon-wrapper icon-bornage"><span class="service-emoji">📍</span></div>
-            <div class="service-content">
-              <h3 class="service-title" data-i18n="servBornageTitle">Bornage & Partage Amiable (القسمة الودية)</h3>
-              <p class="service-description" data-i18n="servBornageDesc">Fixation contradictoire des limites, pose de bornes officielles normalisées et rédaction du procès-verbal opposable.</p>
-            </div>
-            <div class="service-footer">
-              <a href="#contact" class="service-link" onclick="selectPrestation('Bornage')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span>
-                <svg viewBox="0 0 20 20" fill="currentColor" class="nav-arrow"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Service 2: Division & Permis de lotir -->
-          <div class="service-card" data-service="Division de terrain">
-            <div class="service-icon-wrapper icon-division"><span class="service-emoji">✂️</span></div>
-            <div class="service-content">
-              <h3 class="service-title" data-i18n="servPermisLotirTitle">Permis de Lotir & Division (رخصة التجزئة)</h3>
-              <p class="service-description" data-i18n="servPermisLotirDesc">Plans parcellaires de morcellement et dossiers complets pour l'obtention du permis de lotir auprès des APC et DUAC.</p>
-            </div>
-            <div class="service-footer">
-              <a href="#contact" class="service-link" onclick="selectPrestation('Division de terrain')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span>
-                <svg viewBox="0 0 20 20" fill="currentColor" class="nav-arrow"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Service 3: Plan topographique & VRD -->
-          <div class="service-card" data-service="Plan topographique">
-            <div class="service-icon-wrapper icon-topo"><span class="service-emoji">🗺️</span></div>
-            <div class="service-content">
-              <h3 class="service-title" data-i18n="servVRDTitle">Topographie, Géodésie & VRD</h3>
-              <p class="service-description" data-i18n="servVRDDesc">Levés altimétriques, implantation d'ouvrages, réseaux d'assainissement, eau potable et voiries (VRD) pour chantiers de BTP.</p>
-            </div>
-            <div class="service-footer">
-              <a href="#contact" class="service-link" onclick="selectPrestation('Plan topographique')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span>
-                <svg viewBox="0 0 20 20" fill="currentColor" class="nav-arrow"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Service 4: Conformité Loi 08-15 & 22-55 -->
-          <div class="service-card" data-service="Loi0815">
-            <div class="service-icon-wrapper icon-implantation"><span class="service-emoji">⚖️</span></div>
-            <div class="service-content">
-              <h3 class="service-title" data-i18n="servLoi0815Title">Conformité Bâti (Lois 08-15 & 22-55)</h3>
-              <p class="service-description" data-i18n="servLoi0815Desc">Dossier de régularisation et d'achèvement des constructions dans le cadre des lois 08-15 et 22-55 (certificat de conformité).</p>
-            </div>
-            <div class="service-footer">
-              <a href="#contact" class="service-link" onclick="selectPrestation('Loi0815')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span>
-                <svg viewBox="0 0 20 20" fill="currentColor" class="nav-arrow"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Service 5: Calcul de surfaces & Document d'arpentage -->
-          <div class="service-card" data-service="Calcul de surfaces">
-            <div class="service-icon-wrapper icon-surfaces"><span class="service-emoji">📐</span></div>
-            <div class="service-content">
-              <h3 class="service-title" data-i18n="servDocArpentageTitle">Document d'Arpentage (وثيقة القياس)</h3>
-              <p class="service-description" data-i18n="servDocArpentageDesc">Établissement de la وثيقة القياس officielle obligatoire pour toute transaction, mutation ou mise à jour cadastrale.</p>
-            </div>
-            <div class="service-footer">
-              <a href="#contact" class="service-link" onclick="selectPrestation('Calcul de surfaces')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span>
-                <svg viewBox="0 0 20 20" fill="currentColor" class="nav-arrow"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Service 6: Copropriété & EDD -->
-          <div class="service-card" data-service="Copropriété">
-            <div class="service-icon-wrapper icon-copro"><span class="service-emoji">🏢</span></div>
-            <div class="service-content">
-              <h3 class="service-title" data-i18n="servEDDTitle">État Descriptif de Division (الجدول الوصفي)</h3>
-              <p class="service-description" data-i18n="servEDDDesc">Plans d'intérieurs et calcul des quotes-parts et millièmes de copropriété pour immeubles et ensembles immobiliers.</p>
-            </div>
-            <div class="service-footer">
-              <a href="#contact" class="service-link" onclick="selectPrestation('Copropriété')">
-                <span data-i18n="serviceQuoteLink">Demander un devis</span>
-                <svg viewBox="0 0 20 20" fill="currentColor" class="nav-arrow"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- PROCESSUS / DÉMARCHE SECTION -->
     <section class="section process-section" id="processus">
@@ -694,32 +796,75 @@
 
           <!-- Stats & OGEF Box -->
           <div class="cabinet-stats-container">
-            <div class="stats-grid">
-              <div class="stat-card">
-                <div class="stat-number-wrapper"><span class="stat-number" data-target="10">10</span><span class="stat-plus">+</span></div>
-                <div class="stat-description" data-i18n="stat1Text">années d'expérience</div>
-                <div class="stat-sub" data-i18n="stat1Sub">au service du foncier</div>
+            <!-- Real Cabinet Facade & Official Plaque Card -->
+            <div class="cabinet-facade-card">
+              <div class="facade-img-wrap">
+                <img src="assets/cabinet-facade.png" alt="Siège du Cabinet d'Ingénierie & d'Expertise Foncière - Farid Khelil à Koléa" class="facade-img" loading="lazy">
+                <div class="facade-overlay-pill">
+                  <span class="pulse-dot"></span>
+                  <span data-i18n="facadePlaqueTag">Siège Officiel du Cabinet</span>
+                </div>
               </div>
-              <div class="stat-card">
-                <div class="stat-number-wrapper"><span class="stat-number" data-target="500">500</span><span class="stat-plus">+</span></div>
-                <div class="stat-description" data-i18n="stat2Text">dossiers réalisés</div>
-                <div class="stat-sub" data-i18n="stat2Sub">particuliers & professionnels</div>
+              <div class="facade-caption">
+                <div class="facade-title-row">
+                  <strong class="facade-name" data-i18n="facadeName">Farid Khelil</strong>
+                  <span class="facade-badge" data-i18n="facadeReg">Agréé Cadastre N° 865</span>
+                </div>
+                <p class="facade-sub" data-i18n="facadeSub">
+                  Cabinet d'Ingénierie & d'Expertise Foncière agréé par l'Ordre des Géomètres-Experts et la conservation foncière. Résidence El Sahel Kerkouba (derrière CPA), Koléa, Tipaza.
+                </p>
+                <div class="facade-direct-phones" dir="ltr">
+                  <a href="tel:+213699378444" class="facade-phone-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>0699 37 84 44</span>
+                  </a>
+                  <span class="facade-phone-sep">•</span>
+                  <a href="tel:+213558567138" class="facade-phone-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>0558 56 71 38</span>
+                  </a>
+                </div>
               </div>
-              <div class="stat-card highlight-card">
-                <div class="stat-number-wrapper"><span class="stat-number" data-target="48">48</span><span class="stat-unit">h</span></div>
-                <div class="stat-description" data-i18n="stat3Text">délai de réponse</div>
-                <div class="stat-sub" data-i18n="stat3Sub">engagement devis rapide</div>
+            </div>
+
+            <!-- 4 Trust Pillars (Replacing unsupported numerical marketing claims) -->
+            <div class="stats-grid pillars-grid">
+              <div class="stat-card pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <strong class="stat-description" data-i18n="pillar1Title">Agrément Officiel OGEF</strong>
+                <span class="stat-sub" data-i18n="pillar1Desc">Inscrit au Tableau de l'Ordre • Prestation de serment</span>
               </div>
-              <div class="stat-card">
-                <div class="stat-number-wrapper"><span class="stat-number" data-target="100">100</span><span class="stat-percent">%</span></div>
-                <div class="stat-description" data-i18n="stat4Text">dossiers suivis</div>
-                <div class="stat-sub" data-i18n="stat4Sub">de A à Z avec rigueur</div>
+
+              <div class="stat-card pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                </div>
+                <strong class="stat-description" data-i18n="pillar2Title">Haute Précision GNSS RTK</strong>
+                <span class="stat-sub" data-i18n="pillar2Desc">Mesures centimétriques par satellite & Station Totale</span>
+              </div>
+
+              <div class="stat-card pillar-card highlight-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <strong class="stat-description" data-i18n="pillar3Title">Réponse sous 48 h</strong>
+                <span class="stat-sub" data-i18n="pillar3Desc">Étude technique préalable et devis transparent</span>
+              </div>
+
+              <div class="stat-card pillar-card">
+                <div class="pillar-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
+                </div>
+                <strong class="stat-description" data-i18n="pillar4Title">Couverture Wilaya</strong>
+                <span class="stat-sub" data-i18n="pillar4Desc">Déplacements rapides en zones urbaines et rurales</span>
               </div>
             </div>
 
             <!-- OGEF Certification Banner inside Cabinet -->
             <div class="ogef-seal-box">
-              <img src="ogef-logo.png" alt="Ordre des Géomètres-Experts" class="ogef-seal-img">
+              <img src="assets/ogef-logo.png" alt="Ordre des Géomètres-Experts" class="ogef-seal-img">
               <div class="ogef-seal-text">
                 <strong>Ordre des Géomètres-Experts Fonciers</strong>
                 <span>Habilitation légale & Déontologie professionnelle certifiée</span>
@@ -741,58 +886,97 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS / AVIS CLIENTS SECTION -->
-    <section class="section testimonials-section" id="temoignages">
+        <!-- SECTION DÉONTOLOGIE & PARTENAIRES INSTITUTIONNELS (CONFORME CODE OGEF) -->
+    <section class="section partners-section" id="partenaires">
+      <!-- Anchor alias for old links -->
+      <span id="temoignages" class="section-anchor"></span>
+
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-tag" data-i18n="testimonialsTag">Témoignages & Confiance</div>
-          <h2 class="section-title" data-i18n="testimonialsTitle">Ce que disent nos clients</h2>
-          <p class="section-subtitle" data-i18n="testimonialsSubtitle">
-            La satisfaction de nos mandants et la conformité légale de leurs dossiers sont notre première priorité.
+          <div class="section-tag" data-i18n="partnersTag">Déontologie & Partenaires</div>
+          <h2 class="section-title" data-i18n="partnersTitle">Un cadre technique et juridique rigoureux</h2>
+          <p class="section-subtitle" data-i18n="partnersSubtitle">
+            Nos livrables sont établis selon les normes de l'Ordre des Géomètres-Experts (OGEF) et sont directement recevables auprès des institutions.
           </p>
         </div>
 
-        <div class="testimonials-grid">
-          <div class="testimonial-card">
-            <div class="stars-row">★★★★★</div>
-            <p class="testimonial-quote" data-i18n="testi1Comment">
-              Un litige de mitoyenneté réglé rapidement et dans le calme grâce à un bornage contradictoire irréprochable. Le procès-verbal a été accepté sans réserve par le notaire.
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">KB</div>
-              <div class="author-meta">
-                <strong class="author-name" data-i18n="testi1Name">Karim Benali</strong>
-                <span class="author-role" data-i18n="testi1Role">Propriétaire foncier</span>
+        <div class="partners-grid">
+          <!-- 1. Notaires -->
+          <div class="partner-card">
+            <div class="partner-card-header">
+              <div class="partner-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
               </div>
+              <h3 class="partner-title" data-i18n="partner1Title">Études Notariales</h3>
             </div>
+            <p class="partner-desc" data-i18n="partner1Desc">
+              Documents d'arpentage, plans de bornage et états descriptifs de division indispensables aux actes authentiques de vente, donation ou succession.
+            </p>
           </div>
 
-          <div class="testimonial-card">
-            <div class="stars-row">★★★★★</div>
-            <p class="testimonial-quote" data-i18n="testi2Comment">
-              Nous collaborons régulièrement pour nos levés topographiques et implantations. Les fichiers DWG sont ultra-précis, livrés dans les temps et parfaitement conformes.
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">SM</div>
-              <div class="author-meta">
-                <strong class="author-name" data-i18n="testi2Name">Sarah Mansouri</strong>
-                <span class="author-role" data-i18n="testi2Role">Architecte DPLG</span>
+          <!-- 2. Conservation Foncière & Cadastre -->
+          <div class="partner-card">
+            <div class="partner-card-header">
+              <div class="partner-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
               </div>
+              <h3 class="partner-title" data-i18n="partner2Title">Conservation Foncière & Cadastre</h3>
             </div>
+            <p class="partner-desc" data-i18n="partner2Desc">
+              Mise en concordance avec les sections cadastrales, immatriculation au livre foncier et régularisation des comptes inconnus.
+            </p>
           </div>
 
-          <div class="testimonial-card">
-            <div class="stars-row">★★★★★</div>
-            <p class="testimonial-quote" data-i18n="testi3Comment">
-              Des dossiers de division, d'actes de propriété et de mise en copropriété toujours clairs, rigoureux et conformes aux exigences du cadastre et de la conservation foncière.
-            </p>
-            <div class="testimonial-author">
-              <div class="author-avatar">RK</div>
-              <div class="author-meta">
-                <strong class="author-name" data-i18n="testi3Name">Maître R. Khelifi</strong>
-                <span class="author-role" data-i18n="testi3Role">Notaire</span>
+          <!-- 3. Collectivités & DUAC -->
+          <div class="partner-card">
+            <div class="partner-card-header">
+              <div class="partner-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
               </div>
+              <h3 class="partner-title" data-i18n="partner3Title">Collectivités Locales & DUAC</h3>
             </div>
+            <p class="partner-desc" data-i18n="partner3Desc">
+              Dossiers techniques pour permis de lotir, régularisation des constructions (Lois 08-15/22-55) et certificats de conformité.
+            </p>
+          </div>
+
+          <!-- 4. Particuliers & Familles -->
+          <div class="partner-card">
+            <div class="partner-card-header">
+              <div class="partner-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3 class="partner-title" data-i18n="partner4Title">Particuliers & Familles</h3>
+            </div>
+            <p class="partner-desc" data-i18n="partner4Desc">
+              Fixation amiable des limites, apaisement des litiges de mitoyenneté et partage successoral équitable et opposable.
+            </p>
+          </div>
+
+          <!-- 5. Promoteurs & BTP -->
+          <div class="partner-card">
+            <div class="partner-card-header">
+              <div class="partner-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="9" y1="22" x2="9" y2="22.01"/><line x1="15" y1="22" x2="15" y2="22.01"/></svg>
+              </div>
+              <h3 class="partner-title" data-i18n="partner5Title">Promoteurs & Entreprises BTP</h3>
+            </div>
+            <p class="partner-desc" data-i18n="partner5Desc">
+              Implantation d'ouvrages, nivellement de précision, suivi VRD et états descriptifs de division de résidences.
+            </p>
+          </div>
+
+          <!-- 6. Exploitations Agricoles & Investisseurs -->
+          <div class="partner-card">
+            <div class="partner-card-header">
+              <div class="partner-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 0-10 10c0 5.25 7 10 10 10s10-4.75 10-10A10 10 0 0 0 12 2z"/><path d="M12 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></svg>
+              </div>
+              <h3 class="partner-title" data-i18n="partner6Title">Exploitations & Investisseurs</h3>
+            </div>
+            <p class="partner-desc" data-i18n="partner6Desc">
+              Délimitation de concessions agricoles (APFA), enquêtes foncières pour carte fellah et autorisations de forages.
+            </p>
           </div>
         </div>
       </div>
@@ -869,10 +1053,10 @@
           <div class="contact-left-col">
             <div class="contact-info-card">
               <div class="ogef-contact-header">
-                <img src="ogef-logo.png" alt="OGEF Logo" class="ogef-contact-logo">
+                <img src="assets/ogef-logo.png" alt="OGEF Logo" class="ogef-contact-logo">
                 <div>
                   <h3 class="contact-info-title" data-i18n="contactInfoTitle">Coordonnées du cabinet</h3>
-                  <span class="ogef-sub-status">Agrément Ordre des Géomètres-Experts</span>
+                  <span class="ogef-sub-status">Agréé OGEF N° 865 • Koléa, Tipaza</span>
                 </div>
               </div>
               <p class="contact-info-desc" data-i18n="contactInfoDesc">
@@ -892,7 +1076,7 @@
                   <div class="detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
                   <div class="detail-content">
                     <span class="detail-label" data-i18n="contactPhoneLabel">Téléphone</span>
-                    <a href="tel:+21300000000" class="detail-link font-semibold">+213 00 00 00 00</a>
+                    <a href="tel:+21324061319" class="detail-link font-semibold">024 06 13 19 / 0699 37 84 44</a>
                   </div>
                 </div>
 
@@ -900,7 +1084,7 @@
                   <div class="detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
                   <div class="detail-content">
                     <span class="detail-label" data-i18n="contactEmailLabel">Email</span>
-                    <a href="mailto:contact@votre-cabinet.dz" class="detail-link">contact@votre-cabinet.dz</a>
+                    <a href="mailto:faridkhelil16@gmail.com" class="detail-link">faridkhelil16@gmail.com</a>
                   </div>
                 </div>
 
@@ -918,11 +1102,11 @@
                 <div class="emergency-title" data-i18n="quickCallTitle">Besoin d'un renseignement immédiat ?</div>
                 <p class="emergency-desc" data-i18n="quickCallDesc">Nos géomètres sont à votre écoute par téléphone ou sur WhatsApp durant les heures d'ouverture.</p>
                 <div class="emergency-btns">
-                  <a href="tel:+21300000000" class="btn btn-outline-white btn-sm">
+                  <a href="tel:+21324061319" class="btn btn-outline-white btn-sm">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     <span data-i18n="btnCallDirect">Appeler le cabinet</span>
                   </a>
-                  <a href="https://wa.me/21300000000?text=Bonjour,%20je%20souhaite%20obtenir%20des%20informations%20sur%20un%20devis." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
+                  <a href="https://wa.me/213699378444?text=Bonjour,%20je%20souhaite%20obtenir%20des%20informations%20sur%20un%20devis." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-sm">
                     <svg viewBox="0 0 24 24" fill="currentColor" class="whatsapp-icon"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.668-.699c.969.54 1.771.82 2.792.82 3.183 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.807-5.769-5.807zm3.377 8.21c-.145.405-.729.743-1.021.789-.283.045-.636.088-2.029-.488-1.782-.736-2.92-2.548-3.009-2.668-.088-.12-1.282-1.706-1.282-3.254 0-1.548.811-2.31 1.102-2.628.29-.318.636-.398.847-.398.212 0 .424.003.61.011.196.008.458-.074.717.549.264.636.899 2.196.979 2.355.079.159.133.344.027.556-.106.212-.159.344-.318.529-.159.186-.334.415-.477.557-.159.159-.324.333-.14.65.185.318.825 1.36 1.77 2.202 1.218 1.085 2.242 1.42 2.56 1.579.318.159.504.133.69-.079.186-.212.795-.928 1.007-1.246.212-.318.424-.265.716-.159.292.106 1.854.874 2.172 1.033.318.159.53.238.61.371.079.133.079.769-.066 1.174z"/></svg>
                     <span>WhatsApp</span>
                   </a>
@@ -960,12 +1144,12 @@
                   <span class="corner tr"></span>
                   <span class="corner bl"></span>
                   <span class="corner br"></span>
-                  <img src="qr-vcard.png" alt="QR Code vCard Cabinet Géomètre" class="qr-code-img" id="mainQrImg">
+                  <img src="assets/qr-vcard.png" alt="QR Code vCard Cabinet Géomètre" class="qr-code-img" id="mainQrImg">
                 </div>
                 <p class="qr-help-text" id="mainQrHelpText" data-i18n="qrVcardHelp">
                   Pointez votre appareil photo pour enregistrer automatiquement le cabinet dans vos contacts.
                 </p>
-                <a href="cabinet-contact.vcf" download="Cabinet-Geometre-Expert-OGEF.vcf" class="btn btn-secondary btn-sm btn-download-vcf">
+                <a href="assets/cabinet-contact.vcf" download="Cabinet-Geometre-Expert-OGEF.vcf" class="btn btn-secondary btn-sm btn-download-vcf">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                   <span data-i18n="btnDownloadVcard">Télécharger la fiche contact (.vcf)</span>
                 </a>
@@ -976,7 +1160,7 @@
                 <span class="qr-networks-label" data-i18n="qrNetworksLabel">Réseaux & Liens officiels du cabinet :</span>
                 <div class="social-links-row">
                   <!-- WhatsApp -->
-                  <a href="https://wa.me/21300000000" target="_blank" rel="noopener noreferrer" class="social-chip chip-wa" title="WhatsApp">
+                  <a href="https://wa.me/213699378444" target="_blank" rel="noopener noreferrer" class="social-chip chip-wa" title="WhatsApp">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.668-.699c.969.54 1.771.82 2.792.82 3.183 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.807-5.769-5.807zm3.377 8.21c-.145.405-.729.743-1.021.789-.283.045-.636.088-2.029-.488-1.782-.736-2.92-2.548-3.009-2.668-.088-.12-1.282-1.706-1.282-3.254 0-1.548.811-2.31 1.102-2.628.29-.318.636-.398.847-.398.212 0 .424.003.61.011.196.008.458-.074.717.549.264.636.899 2.196.979 2.355.079.159.133.344.027.556-.106.212-.159.344-.318.529-.159.186-.334.415-.477.557-.159.159-.324.333-.14.65.185.318.825 1.36 1.77 2.202 1.218 1.085 2.242 1.42 2.56 1.579.318.159.504.133.69-.079.186-.212.795-.928 1.007-1.246.212-.318.424-.265.716-.159.292.106 1.854.874 2.172 1.033.318.159.53.238.61.371.079.133.079.769-.066 1.174z"/></svg>
                     <span>WhatsApp</span>
                   </a>
@@ -991,7 +1175,7 @@
                     <span data-i18n="netLinkedIn">LinkedIn</span>
                   </a>
                   <!-- Google Maps -->
-                  <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="social-chip chip-map" title="Google Maps">
+                  <a href="https://maps.app.goo.gl/wJWnDGQdRsHwPk6o6?g_st=aw" target="_blank" rel="noopener noreferrer" class="social-chip chip-map" title="Google Maps">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     <span data-i18n="netMaps">Maps</span>
                   </a>
@@ -1057,6 +1241,24 @@
                 <input type="text" id="localisation" name="localisation" class="form-control" data-i18n-placeholder="placeholderLocation" placeholder="Commune, Ville ou Wilaya de situation de la parcelle">
               </div>
 
+                            <div class="form-group file-upload-group">
+                <label for="pieceJointe" class="form-label">
+                  <span data-i18n="labelFile">Joindre un document (plan, acte, extrait cadastral, photo)</span>
+                  <span class="optional-tag" data-i18n="optionalTag">(Optionnel - Max 10 Mo)</span>
+                </label>
+                <div class="file-upload-box" id="fileUploadBox">
+                  <input type="file" id="pieceJointe" name="pieceJointe" accept=".pdf,.jpg,.jpeg,.png,.dwg" class="file-input-hidden">
+                  <label for="pieceJointe" class="file-upload-label" id="fileUploadLabel">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="file-upload-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    <span class="file-upload-prompt" id="fileUploadPrompt" data-i18n="fileUploadPrompt">Cliquez ou glissez un plan, acte ou photo du terrain...</span>
+                  </label>
+                  <div class="file-selected-badge" id="fileSelectedBadge" style="display:none;">
+                    <span class="badge-file-name" id="badgeFileName"></span>
+                    <button type="button" class="btn-clear-file" id="clearFileBtn" aria-label="Supprimer le fichier">&times;</button>
+                  </div>
+                </div>
+              </div>
+
               <div class="form-group">
                 <label for="message" class="form-label" data-i18n="labelMessage">Votre message</label>
                 <textarea id="message" name="message" rows="4" class="form-control" data-i18n-placeholder="placeholderMessage" placeholder="Précisez la superficie approximative, le numéro de section/ilot ou l'objet de votre démarche..."></textarea>
@@ -1105,10 +1307,10 @@
             <span class="corner tr"></span>
             <span class="corner bl"></span>
             <span class="corner br"></span>
-            <img src="qr-vcard.png" alt="QR Code Cabinet" class="modal-qr-img" id="modalQrImg">
+            <img src="assets/qr-vcard.png" alt="QR Code Cabinet" class="modal-qr-img" id="modalQrImg">
           </div>
           <p class="qr-help-text" id="modalQrHelpText" data-i18n="qrVcardHelp">Pointez votre appareil photo pour enregistrer automatiquement le cabinet dans vos contacts.</p>
-          <a href="cabinet-contact.vcf" download="Cabinet-Geometre-Expert-OGEF.vcf" class="btn btn-secondary btn-full btn-sm">
+          <a href="assets/cabinet-contact.vcf" download="Cabinet-Geometre-Expert-OGEF.vcf" class="btn btn-secondary btn-full btn-sm">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             <span data-i18n="btnDownloadVcard">Télécharger la fiche contact (.vcf)</span>
           </a>
@@ -1158,66 +1360,115 @@
   <!-- TOAST NOTIFICATION -->
   <div class="toast-notification" id="toastNotification"></div>
 
-  <!-- FOOTER -->
+    <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-top">
+        
+        <!-- Column 1: Brand & Accreditation -->
         <div class="footer-brand">
           <div class="footer-ogef-box">
-            <img src="ogef-logo.png" alt="OGEF" class="footer-ogef-logo">
+            <img src="assets/ogef-logo.png" alt="OGEF" class="footer-ogef-logo">
           </div>
           <div class="logo-text">
-            <span class="logo-title text-white" data-i18n="brandTitle">Cabinet Géomètre Expert</span>
-            <span class="logo-subtitle text-slate-400" data-i18n="brandSubtitle">Agréé OGEF • Expertise Foncière & Topographique</span>
+            <span class="logo-title text-white" data-i18n="brandTitle">Cabinet d'Ingénierie & d'Expertise Foncière</span>
+            <span class="logo-subtitle text-slate-400" data-i18n="brandSubtitle">Farid Khelil • Agréé OGEF N° 865 • Koléa, Tipaza</span>
           </div>
           <p class="footer-tagline" data-i18n="footerTagline">
-            Cabinet Géomètre Expert Foncier agréé par l'Ordre des Géomètres-Experts (OGEF). Travaux fonciers, cadastraux et topographiques conformes aux normes légales algériennes.
+            Cabinet d'Ingénierie et d'Expertise Foncière dirigé par Farid Khelil, Géomètre-Expert agréé OGEF N° 865. Travaux fonciers, cadastraux et topographiques conformes aux normes légales algériennes.
           </p>
           <div class="footer-badges">
-            <span class="footer-badge" data-i18n="footerBadge1">Agréé Ordre des Géomètres Experts (OGEF)</span>
-            <span class="footer-badge" data-i18n="footerBadge2">Interventions sur toute la Wilaya</span>
+            <span class="footer-badge" data-i18n="footerBadge1">Agrément OGEF N° 865 - Koléa</span>
+            <span class="footer-badge" data-i18n="footerBadge2">Interventions Wilaya de Tipaza & Région</span>
           </div>
         </div>
 
+        <!-- Column 2: Key Prestations (without awkward wrapping) -->
         <div class="footer-links-col">
           <h4 class="footer-heading" data-i18n="footerColServices">Prestations</h4>
           <ul class="footer-links">
-            <li><a href="#cadastre" onclick="selectPrestation('Bornage')" data-i18n="servBornageTitle">Bornage & Partage amiable</a></li>
-            <li><a href="#cadastre" onclick="selectPrestation('Loi0815')" data-i18n="servLoi0815Title">Régularisation Lois 08-15 / 22-55</a></li>
-            <li><a href="#cadastre" onclick="selectPrestation('Loi0207')" data-i18n="servLoi0207Title">Acte de propriété Loi 02-07</a></li>
-            <li><a href="#cadastre" onclick="selectPrestation('Surfaces')" data-i18n="servDocArpentageTitle">Document d'arpentage (وثيقة القياس)</a></li>
-            <li><a href="#cadastre" onclick="selectPrestation('Copropriété')" data-i18n="servEDDTitle">État Descriptif de Division (EDD)</a></li>
-            <li><a href="#cadastre" onclick="selectPrestation('CompteInconnu')" data-i18n="servCompteInconnuTitle">Biens non réclamés / Compte inconnu</a></li>
+            <li><a href="#prestations" onclick="selectPrestation('Bornage')" data-i18n="servBornageTitle">Bornage & Partage amiable</a></li>
+            <li><a href="#prestations" onclick="selectPrestation('Loi0815')" data-i18n="servLoi0815Title">Régularisation Lois 08-15 / 22-55</a></li>
+            <li><a href="#prestations" onclick="selectPrestation('Loi0207')" data-i18n="servLoi0207Title">Acte de propriété (Loi 02-07)</a></li>
+            <li><a href="#prestations" onclick="selectPrestation('Surfaces')" data-i18n="servDocArpentageTitle">Document d'arpentage (وثيقة القياس)</a></li>
+            <li><a href="#prestations" onclick="selectPrestation('Copropriété')" data-i18n="servEDDTitle">État Descriptif de Division (EDD)</a></li>
+            <li><a href="#prestations" onclick="selectPrestation('CompteInconnu')" data-i18n="servCompteInconnuTitle">Biens non réclamés & Compte inconnu</a></li>
           </ul>
         </div>
 
+        <!-- Column 3: Navigation Links (Clean & ZERO duplicate) -->
         <div class="footer-links-col">
           <h4 class="footer-heading" data-i18n="footerColNav">Navigation</h4>
           <ul class="footer-links">
             <li><a href="#accueil" data-i18n="navHome">Accueil</a></li>
-            <li><a href="#cadastre" data-i18n="navCadastre">Régularisation & Lois</a></li>
-            <li><a href="#realisations" data-i18n="navLivrables">Réalisations</a></li>
-            <li><a href="#services" data-i18n="navServices">Prestations</a></li>
+            <li><a href="#prestations" data-i18n="navServices">Prestations & Cadastre</a></li>
+            <li><a href="#realisations" data-i18n="navLivrables">Réalisations & Plans</a></li>
+            <li><a href="#processus" data-i18n="navProcess">Notre démarche</a></li>
             <li><a href="#cabinet" data-i18n="navCabinet">Le cabinet</a></li>
-            <li><a href="#temoignages" data-i18n="navTestimonials">Avis clients</a></li>
+            <li><a href="#partenaires" data-i18n="partnersTag">Déontologie & Partenaires</a></li>
             <li><a href="#contact" data-i18n="navContact">Demander un devis</a></li>
           </ul>
         </div>
 
+        <!-- Column 4: Contact Information (Clean rows, LTR phones, no single-word wrap) -->
         <div class="footer-contact-col">
           <h4 class="footer-heading" data-i18n="footerColContact">Nous joindre</h4>
-          <p class="footer-info-text">
-            <strong data-i18n="contactAddressLabel">Adresse :</strong> <span data-i18n="contactAddressVal">Adresse du cabinet, Ville, Wilaya</span><br>
-            <strong data-i18n="contactPhoneLabel">Tél :</strong> <a href="tel:+21300000000" class="footer-phone">+213 00 00 00 00</a><br>
-            <strong data-i18n="contactEmailLabel">Email :</strong> <a href="mailto:contact@votre-cabinet.dz">contact@votre-cabinet.dz</a><br>
-            <strong data-i18n="contactHoursLabel">Horaires :</strong> <span data-i18n="contactHoursVal">Dimanche au jeudi, 8 h – 16 h</span>
-          </p>
+          <div class="footer-contact-items">
+            
+            <div class="fcontact-row">
+              <div class="fcontact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="fcontact-data">
+                <strong class="fcontact-label" data-i18n="contactAddressLabel">Adresse</strong>
+                <span class="fcontact-val" data-i18n="contactAddressVal">Résidence El Sahel Kerkouba (derrière CPA), Koléa, Tipaza</span>
+              </div>
+            </div>
+
+            <div class="fcontact-row">
+              <div class="fcontact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="fcontact-data">
+                <strong class="fcontact-label" data-i18n="contactPhoneLabel">Téléphone & WhatsApp</strong>
+                <div class="fcontact-phones-row" dir="ltr">
+                  <a href="tel:+21324061319" class="fphone-link">024 06 13 19</a>
+                  <span class="fphone-sep">•</span>
+                  <a href="tel:+213699378444" class="fphone-link">0699 37 84 44</a>
+                  <span class="fphone-sep">•</span>
+                  <a href="tel:+213558567138" class="fphone-link">0558 56 71 38</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="fcontact-row">
+              <div class="fcontact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="fcontact-data">
+                <strong class="fcontact-label" data-i18n="contactEmailLabel">Email</strong>
+                <a href="mailto:faridkhelil16@gmail.com" class="fcontact-email" dir="ltr">faridkhelil16@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="fcontact-row">
+              <div class="fcontact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="fcontact-data">
+                <strong class="fcontact-label" data-i18n="contactHoursLabel">Horaires</strong>
+                <span class="fcontact-val fcontact-hours" data-i18n="contactHoursVal">Tous les jours sauf vendredi : 9h00 – 16h30</span>
+              </div>
+            </div>
+
+          </div>
         </div>
+
       </div>
 
       <div class="footer-bottom">
         <p class="copyright" data-i18n="footerCopyright">
-          © Cabinet Géomètre Expert Foncier Agréé OGEF. Tous droits réservés.
+          © Cabinet d'Ingénierie & d'Expertise Foncière - Farid Khelil (Agréé OGEF N° 865). Tous droits réservés.
         </p>
         <a href="#accueil" class="back-to-top" id="backToTop" aria-label="Retour en haut de page">
           <span data-i18n="footerBackToTop">Retour en haut</span>
@@ -1232,13 +1483,52 @@
     <button type="button" class="floating-btn qr-btn" id="floatingQrBtn" title="QR Code Contact & Réseaux" aria-label="QR Code Contact">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
     </button>
-    <a href="https://wa.me/21300000000?text=Bonjour,%20je%20souhaite%20obtenir%20des%20informations%20sur%20un%20devis." target="_blank" rel="noopener noreferrer" class="floating-btn whatsapp-btn" title="WhatsApp" aria-label="WhatsApp">
+    <a href="https://wa.me/213699378444?text=Bonjour,%20je%20souhaite%20obtenir%20des%20informations%20sur%20un%20devis." target="_blank" rel="noopener noreferrer" class="floating-btn whatsapp-btn" title="WhatsApp" aria-label="WhatsApp">
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.668-.699c.969.54 1.771.82 2.792.82 3.183 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.807-5.769-5.807zm3.377 8.21c-.145.405-.729.743-1.021.789-.283.045-.636.088-2.029-.488-1.782-.736-2.92-2.548-3.009-2.668-.088-.12-1.282-1.706-1.282-3.254 0-1.548.811-2.31 1.102-2.628.29-.318.636-.398.847-.398.212 0 .424.003.61.011.196.008.458-.074.717.549.264.636.899 2.196.979 2.355.079.159.133.344.027.556-.106.212-.159.344-.318.529-.159.186-.334.415-.477.557-.159.159-.324.333-.14.65.185.318.825 1.36 1.77 2.202 1.218 1.085 2.242 1.42 2.56 1.579.318.159.504.133.69-.079.186-.212.795-.928 1.007-1.246.212-.318.424-.265.716-.159.292.106 1.854.874 2.172 1.033.318.159.53.238.61.371.079.133.079.769-.066 1.174z"/></svg>
     </a>
-    <a href="tel:+21300000000" class="floating-btn phone-btn" title="Appeler le cabinet" aria-label="Téléphone">
+    <a href="tel:+21324061319" class="floating-btn phone-btn" title="Appeler le cabinet" aria-label="Téléphone">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
   </div>
+
+  <!-- ANDROID MOBILE BOTTOM APP NAVIGATION BAR (Active on mobile screens <= 768px) -->
+  <nav class="android-bottom-bar" id="androidBottomBar" aria-label="Navigation Mobile">
+    <a href="#accueil" class="bottom-nav-item active" id="bnavHome">
+      <div class="bnav-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bnav-icon"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <span class="bnav-label" data-i18n="bottomNavHome">Accueil</span>
+    </a>
+
+    <a href="#cadastre" class="bottom-nav-item" id="bnavServices">
+      <div class="bnav-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bnav-icon"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+      </div>
+      <span class="bnav-label" data-i18n="bottomNavServices">Services</span>
+    </a>
+
+    <!-- Central Floating Action Button (Devis Express) -->
+    <a href="#contact" class="bottom-nav-item bnav-action-pill" id="bnavDevis">
+      <div class="bnav-action-circle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="bnav-action-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </div>
+      <span class="bnav-label" data-i18n="bottomNavDevis">Devis</span>
+    </a>
+
+    <a href="https://wa.me/213699378444?text=Bonjour,%20je%20souhaite%20obtenir%20des%20informations%20sur%20un%20devis." target="_blank" rel="noopener noreferrer" class="bottom-nav-item" id="bnavWhatsApp">
+      <div class="bnav-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="bnav-icon whatsapp-color"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.668-.699c.969.54 1.771.82 2.792.82 3.183 0 5.768-2.587 5.769-5.766.001-3.182-2.585-5.807-5.769-5.807zm3.377 8.21c-.145.405-.729.743-1.021.789-.283.045-.636.088-2.029-.488-1.782-.736-2.92-2.548-3.009-2.668-.088-.12-1.282-1.706-1.282-3.254 0-1.548.811-2.31 1.102-2.628.29-.318.636-.398.847-.398.212 0 .424.003.61.011.196.008.458-.074.717.549.264.636.899 2.196.979 2.355.079.159.133.344.027.556-.106.212-.159.344-.318.529-.159.186-.334.415-.477.557-.159.159-.324.333-.14.65.185.318.825 1.36 1.77 2.202 1.218 1.085 2.242 1.42 2.56 1.579.318.159.504.133.69-.079.186-.212.795-.928 1.007-1.246.212-.318.424-.265.716-.159.292.106 1.854.874 2.172 1.033.318.159.53.238.61.371.079.133.079.769-.066 1.174z"/></svg>
+      </div>
+      <span class="bnav-label" data-i18n="bottomNavWhatsApp">WhatsApp</span>
+    </a>
+
+    <button type="button" class="bottom-nav-item" id="bnavQr">
+      <div class="bnav-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bnav-icon"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M7 7h.01M17 7h.01M7 17h.01M17 17h.01"/></svg>
+      </div>
+      <span class="bnav-label" data-i18n="bottomNavQr">QR Code</span>
+    </button>
+  </nav>
 
   <!-- Multilingual & Interactive JS -->
   <script src="translations.js"></script>

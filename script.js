@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollSpy();
   initStatsCounter();
   initFormValidationAndEmailLinking();
+  initAndroidBottomBar();
+  initPrestationCategoryFilters();
+  initFileUploadDropzone();
+  applyCabinetConfig();
   initBackToTop();
 });
 
@@ -129,7 +133,8 @@ function initQrFeatures() {
     document.getElementById('openQrBtnTop'),
     document.getElementById('openQrBtnMobile'),
     document.getElementById('openQrBtnHero'),
-    document.getElementById('floatingQrBtn')
+    document.getElementById('floatingQrBtn'),
+    document.getElementById('bnavQr')
   ];
 
   function openQrModal() {
@@ -270,6 +275,9 @@ function initMobileMenu() {
 function initScrollSpy() {
   const sections = document.querySelectorAll('section[id], body[id]');
   const navLinks = document.querySelectorAll('.nav-menu .nav-link');
+  const bnavHome = document.getElementById('bnavHome');
+  const bnavServices = document.getElementById('bnavServices');
+  const bnavDevis = document.getElementById('bnavDevis');
 
   function onScroll() {
     let scrollPos = window.scrollY + 120;
@@ -286,6 +294,18 @@ function initScrollSpy() {
             link.classList.add('active');
           }
         });
+
+        // Android bottom bar active state synchronization
+        if (id === 'accueil' && bnavHome) {
+          [bnavHome, bnavServices, bnavDevis].forEach(el => el && el.classList.remove('active'));
+          bnavHome.classList.add('active');
+        } else if ((id === 'cadastre' || id === 'services' || id === 'realisations') && bnavServices) {
+          [bnavHome, bnavServices, bnavDevis].forEach(el => el && el.classList.remove('active'));
+          bnavServices.classList.add('active');
+        } else if (id === 'contact' && bnavDevis) {
+          [bnavHome, bnavServices, bnavDevis].forEach(el => el && el.classList.remove('active'));
+          bnavDevis.classList.add('active');
+        }
       }
     });
   }
@@ -506,7 +526,8 @@ function initFormValidationAndEmailLinking() {
 • تفاصيل المشروع :
 ${msgVal}
 --------------------------------------------------
-موجّه لمكتب المهندس الخبير العقاري المعتمد OGEF`;
+موجّه إلى: مكتب الهندسة والخبرة العقارية - خليل فريد (معتمد OGEF رقم 865)
+إقامة الساحل كركوبة، القليعة، ولاية تيبازة`;
     } else if (currentLang === 'en') {
       emailSubject = `[Quote Request / Land Survey] - ${selectedPrestationText} - ${nomVal}`;
       summaryText = 
@@ -521,7 +542,8 @@ ${msgVal}
 • Project Description:
 ${msgVal}
 --------------------------------------------------
-Submitted via Official Chartered Land Surveyor Website`;
+To: Land Engineering & Surveying Office - Farid Khelil (OGEF #865)
+Koléa, Tipaza`;
     } else {
       emailSubject = `[Demande de Devis / Expertise] - ${selectedPrestationText} - ${nomVal}`;
       summaryText = 
@@ -536,16 +558,52 @@ Submitted via Official Chartered Land Surveyor Website`;
 • Description du projet :
 ${msgVal}
 --------------------------------------------------
-Cabinet Géomètre Expert Foncier Agréé OGEF`;
+Destinataire : Cabinet d'Ingénierie & d'Expertise Foncière - Farid Khelil
+Agréé OGEF N° 865 • Résidence El Sahel Kerkouba, Koléa, Tipaza`;
     }
 
+    // File attachment info
+    const fileInput = document.getElementById('pieceJointe');
+    if (fileInput && fileInput.files && fileInput.files.length > 0) {
+      const fileName = fileInput.files[0].name;
+      if (currentLang === 'ar') {
+        summaryText += `\n• وثيقة مرفقة : ${fileName}`;
+      } else if (currentLang === 'en') {
+        summaryText += `\n• Attached Document: ${fileName}`;
+      } else {
+        summaryText += `\n• Document joint : ${fileName}`;
+      }
+    }
+
+    // Reference number
+    const refNum = `REF-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
+    summaryText += `\n• Réf. Dossier : ${refNum}`;
+
+    // Read configured Email & WhatsApp from config.js if available
+    const cfg = window.CABINET_CONFIG || {};
+    const cabinetEmail = cfg.email || 'faridkhelil16@gmail.com';
+    const cabinetPhone = cfg.whatsappNumber || '213699378444';
+
     // Build mailto Link
-    const cabinetEmail = 'contact@votre-cabinet.dz';
     const mailtoUrl = `mailto:${cabinetEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(summaryText)}`;
 
     // Build WhatsApp Link
-    const cabinetPhone = '21300000000';
     const waUrl = `https://wa.me/${cabinetPhone}?text=${encodeURIComponent(summaryText)}`;
+
+    // Optional online form backend dispatch (Formspree, Web3Forms, etc.)
+    if (cfg.formEndpoint && cfg.formEndpoint.trim() !== '') {
+      try {
+        const formData = new FormData(form);
+        formData.append('dossier_reference', refNum);
+        fetch(cfg.formEndpoint, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        }).catch(e => console.warn('Online endpoint notification error:', e));
+      } catch (err) {
+        console.warn('Endpoint error:', err);
+      }
+    }
 
     // Update dispatch modal content
     if (quoteSummaryText) {
@@ -613,3 +671,122 @@ function initBackToTop() {
     });
   });
 }
+
+/**
+ * Android Bottom App Navigation Bar logic
+ */
+function initAndroidBottomBar() {
+  const bnavItems = document.querySelectorAll('.android-bottom-bar .bottom-nav-item:not(#bnavQr):not(#bnavWhatsApp)');
+  bnavItems.forEach(item => {
+    item.addEventListener('click', () => {
+      bnavItems.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
+}
+
+
+/**
+ * Category Filter Pills for Unified Prestations
+ */
+function initPrestationCategoryFilters() {
+  const filterBtns = document.querySelectorAll('#prestationFilters .filter-pill');
+  const cards = document.querySelectorAll('#prestationsGrid .prest-card');
+  if (!filterBtns.length || !cards.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.getAttribute('data-filter');
+      cards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = 'flex';
+          card.style.opacity = '1';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+/**
+ * File Upload Dropzone in Quote Form
+ */
+function initFileUploadDropzone() {
+  const input = document.getElementById('pieceJointe');
+  const badge = document.getElementById('fileSelectedBadge');
+  const badgeName = document.getElementById('badgeFileName');
+  const clearBtn = document.getElementById('clearFileBtn');
+  const label = document.getElementById('fileUploadLabel');
+  if (!input) return;
+
+  input.addEventListener('change', () => {
+    if (input.files && input.files.length > 0) {
+      const file = input.files[0];
+      const sizeMb = (file.size / (1024 * 1024)).toFixed(2);
+      if (badgeName) badgeName.textContent = `${file.name} (${sizeMb} Mo)`;
+      if (badge) badge.style.display = 'flex';
+      if (label) label.style.display = 'none';
+    }
+  });
+
+  if (clearBtn) {
+    clearBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      input.value = '';
+      if (badge) badge.style.display = 'none';
+      if (label) label.style.display = 'flex';
+    });
+  }
+}
+
+/**
+ * Apply dynamic Cabinet configuration from config.js
+ */
+function applyCabinetConfig() {
+  const cfg = window.CABINET_CONFIG;
+  if (!cfg) return;
+
+  // Update telephone links
+  const primaryPhone = cfg.phoneFixe || cfg.phone || '024 06 13 19';
+  const primaryPhoneRaw = cfg.phoneFixeRaw || '+21324061319';
+  const mobilePhone = cfg.mobile2 || cfg.mobile1 || '0699 37 84 44';
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(a => {
+    a.href = `tel:${primaryPhoneRaw}`;
+    if (a.classList.contains('detail-link') || a.classList.contains('footer-phone')) {
+      a.textContent = `${primaryPhone} / ${mobilePhone}`;
+    }
+  });
+
+  // Update email links
+  if (cfg.email) {
+    document.querySelectorAll('a[href^="mailto:"]').forEach(a => {
+      if (!a.id || a.id !== 'modalDirectMailBtn') {
+        a.href = `mailto:${cfg.email}`;
+        if (a.textContent.includes('@')) {
+          a.textContent = cfg.email;
+        }
+      }
+    });
+  }
+
+  // Update WhatsApp links
+  if (cfg.whatsappNumber) {
+    document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+      const currentHref = a.getAttribute('href');
+      const textParam = currentHref.includes('?text=') ? currentHref.substring(currentHref.indexOf('?text=')) : '';
+      a.href = `https://wa.me/${cfg.whatsappNumber}${textParam}`;
+    });
+  }
+
+  // Update Social & Maps links
+  if (cfg.mapsUrl) {
+    document.querySelectorAll('a.chip-map').forEach(a => a.href = cfg.mapsUrl);
+  }
+}
+
