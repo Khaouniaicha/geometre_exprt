@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Géomètre Expert;Cabinet;;;
+FN:Cabinet Géomètre Expert Foncier Agréé OGEF
+ORG:Ordre des Géomètres-Experts Fonciers (OGEF)
+TITLE:Géomètre Expert Foncier Assermenté
+TEL;TYPE=WORK,VOICE:+21300000000
+TEL;TYPE=CELL,VOICE:+21300000000
+EMAIL;TYPE=WORK,INTERNET:contact@votre-cabinet.dz
+URL:https://votre-cabinet.dz
+ADR;TYPE=WORK:;;Adresse du cabinet;Ville;Wilaya;;Algérie
+NOTE:Cabinet Agréé OGEF - Bornage, Cadastre, Régularisation Lois 08-15 / 22-55 / 02-07, Division & Topographie
+END:VCARD
